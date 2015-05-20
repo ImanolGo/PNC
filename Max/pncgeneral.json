@@ -7,8 +7,7 @@
 				"data" : 				{
 					"live.dial" : [ 32.047244 ],
 					"live.dial[1]" : [ 31.023622 ],
-					"PNC_MasterVolume::live.dial" : [ 0.0 ],
-					"PNC_MasterVolume::live.dial[1]" : [ 1.0 ]
+					"PNC_MasterVolume::live.dial" : [ 0.85 ]
 				}
 
 			}

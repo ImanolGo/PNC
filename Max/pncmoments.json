@@ -1,0 +1,27 @@
+{
+	"pattrstorage" : 	{
+		"name" : "pncmoments",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"u378007899" : [  ],
+					"PNC_MidiCC[4]::live.dial[1]" : [ 21.0 ],
+					"PNC_MidiCC[4]::live.numbox[15]" : [ 0.0 ],
+					"PNC_MidiCC[1]::live.dial[1]" : [ 22.5 ],
+					"PNC_MidiCC[1]::live.numbox[15]" : [ 0.0 ],
+					"PNC_MidiCC[2]::live.dial[1]" : [ 23.0 ],
+					"PNC_MidiCC[2]::live.numbox[15]" : [ 0.0 ],
+					"PNC_MidiCC[3]::live.dial[1]" : [ 24.1 ],
+					"PNC_MidiCC[3]::live.numbox[15]" : [ 0.0 ],
+					"PNC_MidiCC[5]::live.dial[1]" : [ 25.0 ],
+					"PNC_MidiCC[5]::live.numbox[15]" : [ 127.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 965.0, 126.0, 681.0, 739.0 ],
+		"rect" : [ 213.0, 103.0, 681.0, 739.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,33 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 127.666626, 587.0, 89.0, 22.0 ],
+					"style" : "",
+					"text" : "s sendLiveOsc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 127.666626, 528.0, 141.0, 23.0 ],
+					"style" : "",
+					"text" : "/live/master/volume $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -45,13 +72,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 364.0, 320.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dial" : [ 0.85 ],
-						"live.dial[1]" : [ 0.0 ]
+						"live.dial" : [ 0.85 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u489000888"
+					"varname" : "u121008074"
 				}
 
 			}
@@ -66,101 +92,6 @@
 					"patching_rect" : [ 358.0, 113.0, 190.0, 35.0 ],
 					"style" : "",
 					"text" : "{\\\"from\\\":\\\"hostname-tbd\\\"\\, \\\"status\\\":\\\"alive\\\"}"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"hidden" : 1,
-					"id" : "obj-49",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 14.166626, 533.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"hidden" : 1,
-					"id" : "obj-31",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.166626, 560.0, 88.0, 20.0 ],
-					"style" : "",
-					"text" : "port \"from Max 1\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 198.0, 456.0, 44.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 3.0, 44.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "Control Number",
-							"parameter_shortname" : "CC",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "live.dial[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 127.666626, 551.0, 50.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 127.666626, 517.0, 42.0, 22.0 ],
-					"style" : "",
-					"text" : "* 127."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 0,
-					"patching_rect" : [ 127.666626, 629.0, 162.0, 22.0 ],
-					"style" : "",
-					"text" : "ctlout"
 				}
 
 			}
@@ -518,51 +449,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-38", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 137.166626, 540.0, 137.166626, 540.0 ],
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 137.166626, 576.0, 137.166626, 576.0 ],
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 23.666626, 615.0, 137.166626, 615.0 ],
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 207.5, 504.0, 208.666626, 504.0 ],
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"midpoints" : [ 23.666626, 558.0, 23.666626, 558.0 ],
-					"source" : [ "obj-49", 0 ]
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -578,10 +468,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 137.166626, 504.0, 137.166626, 504.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -598,8 +487,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-8" : [ "live.dial", "Volume", 0 ],
-			"obj-36" : [ "Control Number", "CC", 0 ]
+			"obj-8" : [ "live.dial", "Volume", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],
