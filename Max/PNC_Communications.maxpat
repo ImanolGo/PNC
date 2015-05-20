@@ -38,6 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-13",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 66.666626, 196.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-10",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 66.666626, 423.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -308,7 +332,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.666626, 143.0, 88.0, 22.0 ],
+					"patching_rect" : [ 66.666626, 135.0, 88.0, 22.0 ],
 					"style" : "",
 					"text" : "r udpReceived"
 				}
@@ -323,7 +347,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.666626, 174.0, 179.0, 23.0 ],
+					"patching_rect" : [ 66.666626, 163.0, 179.0, 23.0 ],
 					"style" : "",
 					"text" : "print udpReceived @popup 1"
 				}
@@ -393,10 +417,19 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 76.166626, 168.0, 76.166626, 168.0 ],
+					"midpoints" : [ 76.166626, 160.0, 76.166626, 160.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -488,6 +521,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 76.166626, 291.0, 76.166626, 291.0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
