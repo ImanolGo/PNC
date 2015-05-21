@@ -9,8 +9,8 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 534.0, 188.0, 653.0, 643.0 ],
-		"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+		"rect" : [ 478.0, 169.0, 532.0, 643.0 ],
+		"bgcolor" : [ 0.65098, 0.666667, 0.666667, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,12 +47,12 @@
 					"patching_rect" : [ 441.0, 140.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"live.dial" : [ 0.0 ],
-						"live.dial[1]" : [ 0.0 ]
+						"live.dial[1]" : [ 55.11811 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u256002187"
+					"varname" : "u544010228"
 				}
 
 			}
@@ -119,7 +119,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 220.0, 334.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "0. 0."
+					"text" : "0. 55.11811"
 				}
 
 			}
@@ -246,7 +246,7 @@
 							"parameter_longname" : "Time",
 							"parameter_shortname" : "Time",
 							"parameter_type" : 0,
-							"parameter_mmax" : 5000.0,
+							"parameter_mmax" : 10000.0,
 							"parameter_unitstyle" : 2
 						}
 
@@ -272,7 +272,7 @@
 							"parameter_longname" : "Delay (ms)",
 							"parameter_shortname" : "Delay",
 							"parameter_type" : 0,
-							"parameter_mmax" : 2000.0,
+							"parameter_mmax" : 15000.0,
 							"parameter_unitstyle" : 2
 						}
 

@@ -14,34 +14,69 @@ It uses information from the Tower to create stunning patterns and dramatic visu
 ESI proposes using environmentally-conscious, energy-efficient technologies for the installation in keeping with the spirit of the Tower.
 
 
-Included:
 
-Max folder
-	- All Max files (.maxpat .amxd)
-	- Python script
-Live folder
-	- Live Sessions (.als)
-	- Samples folder
+-------------
+README
+--------------
 
 
-Prerequisite:
+I. File list
+------------
 
-Copy all the audio files (*.asd and *.wav) from Bruce’s Ableton Live Session into “PNC MODE TESTER Project/Samples/.
+Live folder:
+	PNC MODE water data.als
+	Samples folder
+
+Max Folder:
+	Max files (*.maxpat)
+	Json files (*.json)
+
+Externals:
+	LiveOSC
 
 
-Usage:
+II. Prerequisites:
+----------
 
-Open PNC MODE TESTER.als Live session. The PNC_Live.amxd Max For Live patch should be already loaded. Otherwise double click to PNC_Live.amxd in the Max folder and it will be automatically added to the currently open Live session. Afterwards, save the current Live Session.
+A. LiveOSC
 
-The PNC_Main.maxpat an example of OSC communications between the render machine and audio machine. Additionally the patch sends a JSON formatted heartbeat over TCP every 30 seconds to localhost.  It will also trigger an action if it doesn’t receive data for more than 4 hours. 
+1. Introduction
 
-On the PNC_Live.amxd there is also a UDP sender to test the functionality. It will also trigger automatically the appropriate moments within each mode , that is it will trigger the appropiate Ableton Live Scenes.
+LiveOSC provides an OSC interface for Ableton Live versions 8 and upwards on both Mac OSX and Windows. 
+
+2. Installation
+
+	* If you are running OSX 10.5.8 skip this step. Otherwise you must install Python 2.5.1
+
+	* Unzip the latest release which should give you a folder called trunk containing a folder called LiveOSC. The LiveOSC folder should be moved to Ableton’s MIDI Remote Scripts folder.
+	
+		- On Windows this is located in \path\to\ableton\Live x.x.x\Resources\MIDI\Remote Scripts
+	
+		- On OSX this is located in /path/to/ableton/Live.app -> Right click -> show package contents. Navigate to contents/app-resources/MIDI Remote Scripts
+
+	* In Ableton Live go to Preferences, Midi Settings. Select LiveOSC from the drop down list.
+
+B.  Audio Samples
+
+Copy all the audio files (*.asd and *.wav) from Bruce’s Ableton Live Session into “Live/Samples/Imported.
 
 
-Optional:
+III. Usage:
+----------
 
-There is also a python script (“tcpServer.py”), that creates a TCP socket and listens to the heartbeats. It is made for testing purposes.
+A. Open Live/PNC MODE water data.als project with Ableton Live.
 
-In order to run it, write in the command line.
+B. Open Max/PNC_Main.maxpat with Max 6 or Max 7.
 
->>> python tcpServer.py
+C. The patch PNC_Main.maxpat shows the main tab menu to interact with the different modes.
+
+D. The General tab handles the general behaviour of the software. It also let’s you simulate the water sequence.
+
+E. The Water tab handles the water sequence and effects.
+	
+	1. You will be able to control the Midi channel to control effects and the delay and ramp time of those effects.
+
+	2. In Ableton Live you can easily change select the midi channel with the effects you want to control. That is through Ableton Live’s Midi mode.
+
+
+

@@ -9,8 +9,8 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 124.0, 79.0, 1183.0, 932.0 ],
-		"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+		"rect" : [ 208.0, 111.0, 1183.0, 932.0 ],
+		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -650,8 +650,38 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-54::obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
+			"obj-54::obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
+			"obj-54::obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-54::obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-54::obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
+			"obj-54::obj-55" : [ "Threshold Min", "ThrMin", 0 ],
+			"obj-54::obj-4::obj-11" : [ "Time", "Time", 0 ],
+			"obj-54::obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
+			"obj-54::obj-53" : [ "ThresholdMax[1]", "ThrMax", 0 ],
+			"obj-54::obj-66" : [ "ThresholdMax[2]", "ThrMax", 0 ],
+			"obj-54::obj-11::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-54::obj-68" : [ "Threshold Min[1]", "ThrMin", 0 ],
+			"obj-53::obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
+			"obj-54::obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-54::obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-54::obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
+			"obj-54::obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-54::obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-54::obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-54::obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-53::obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-53::obj-27" : [ "Water Fresh", "Fresh", 0 ]
+			"obj-54::obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-53::obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-54::obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
+			"obj-54::obj-22::obj-11" : [ "Time[3]", "Time", 0 ],
+			"obj-54::obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
+			"obj-54::obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-54::obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-54::obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-54::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
+			"obj-54::obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-54::obj-58::obj-11" : [ "Time[4]", "Time", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -683,21 +713,56 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "PNC_FireMoment.maxpat",
+				"name" : "PNC_MasterVolume.maxpat",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "M4L.api.GetSceneCount.maxpat",
-				"bootpath" : "/Applications/Max.app/Contents/Resources/C74/patchers/m4l/LiveAPI resources/abstractions",
-				"patcherrelativepath" : "../../../../../../../../../Applications/Max.app/Contents/Resources/C74/patchers/m4l/LiveAPI resources/abstractions",
+				"name" : "pncgeneral.json",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_Moments.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_LiveOsc.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_Water.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pncwater.json",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_RampDelay.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_MidiCC.maxpat",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
