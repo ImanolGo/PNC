@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 80.0, 1147.0, 653.0 ],
+		"rect" : [ 136.0, 127.0, 777.0, 857.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,288 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 449.75, 819.0, 158.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /recycled_compost"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-73",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 508.25, 695.5, 52.0, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 444.0, 472.5, 52.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Recycled Compost",
+							"parameter_shortname" : "Compost",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialCompost"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 437.0, 640.5, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-59",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 445.0, 695.5, 52.0, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 393.0, 472.5, 52.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Waste",
+							"parameter_shortname" : "Waste",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialWaste"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-60",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 373.166748, 695.5, 60.916626, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 336.0, 472.5, 59.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "RecWeekly",
+							"parameter_shortname" : "RecWeek",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialRecycledWeek"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 442.0, 782.0, 169.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /recycled_totalWaste"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 343.166748, 756.0, 141.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /recycled_week"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 80.083374, 826.0, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "s udpSend"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-64",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 115.75, 678.0, 116.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 28.666626, 461.0, 116.0, 20.0 ],
+					"style" : "",
+					"text" : "Water Sequence"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 278.083374, 710.0, 49.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 273.0, 489.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "REC99"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 223.083374, 710.0, 49.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 216.0, 489.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "REC04"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 160.083374, 710.0, 49.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 155.0, 489.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "REC03"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 95.75, 710.0, 56.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 88.166626, 489.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "REC02"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 33.75, 710.0, 49.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 28.666626, 489.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "REC01"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 80.083374, 776.0, 85.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /start"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.47451, 0.478431, 0.47451, 1.0 ],
+					"id" : "obj-71",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 352.0, 688.5, 230.0, 58.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 338.583313, 466.0, 156.416687, 63.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"id" : "obj-72",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 25.5, 620.0, 629.25, 247.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 23.375, 450.75, 481.25, 94.5 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-43",
 					"maxclass" : "comment",
@@ -46,7 +328,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 887.5, 410.0, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 199.166626, 486.0, 101.0, 20.0 ],
+					"presentation_rect" : [ 199.166626, 608.0, 101.0, 20.0 ],
 					"style" : "",
 					"text" : "Failover"
 				}
@@ -73,7 +355,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 964.5, 440.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 259.166626, 521.0, 49.0, 22.0 ],
+					"presentation_rect" : [ 259.166626, 643.0, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "backup"
 				}
@@ -88,7 +370,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 896.5, 440.0, 51.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 194.666626, 521.0, 52.0, 22.0 ],
+					"presentation_rect" : [ 194.666626, 643.0, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "primary"
 				}
@@ -161,13 +443,16 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 846.0, 259.0, 58.0, 22.0 ],
 					"restore" : 					{
+						"live.dialCompost" : [ 0.274803 ],
 						"live.dialFresh" : [ 0.354331 ],
-						"live.dialRecycle" : [ 0.771654 ]
+						"live.dialRecycle" : [ 0.771654 ],
+						"live.dialRecycledWeek" : [ 0.116535 ],
+						"live.dialWaste" : [ 0.187402 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u695001052"
+					"varname" : "u019002866"
 				}
 
 			}
@@ -188,7 +473,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 799.0, 490.5, 45.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.166626, 490.0, 50.0, 54.0 ],
+					"presentation_rect" : [ 36.166626, 612.0, 50.0, 54.0 ],
 					"varname" : "PNC_MasterVolume",
 					"viewvisibility" : 1
 				}
@@ -203,7 +488,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 678.75, 414.0, 101.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.166626, 464.0, 101.0, 20.0 ],
+					"presentation_rect" : [ 36.166626, 586.0, 101.0, 20.0 ],
 					"style" : "",
 					"text" : "Master Volume"
 				}
@@ -265,7 +550,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 51.166626, 252.75, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "/water_fresh 0.354331"
+					"text" : "/recycled_compost 0.274803"
 				}
 
 			}
@@ -333,7 +618,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 157.166626, 127.25, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "WAT99",
+					"text" : "REC01",
 					"textjustification" : 1
 				}
 
@@ -385,7 +670,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 740.75, 444.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.666626, 522.0, 49.0, 22.0 ],
+					"presentation_rect" : [ 91.666626, 644.0, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "unmute"
 				}
@@ -400,7 +685,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 687.75, 444.0, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.666626, 495.0, 36.0, 22.0 ],
+					"presentation_rect" : [ 91.666626, 617.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "mute"
 				}
@@ -654,7 +939,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 964.5, 518.5, 85.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 319.5, 521.0, 85.0, 22.0 ],
+					"presentation_rect" : [ 319.5, 643.0, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "PNC_Failover"
 				}
@@ -734,7 +1019,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 671.75, 383.5, 189.25, 216.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.375, 458.75, 135.791626, 94.5 ],
+					"presentation_rect" : [ 23.375, 580.75, 135.791626, 94.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -751,7 +1036,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 882.5, 383.5, 189.25, 216.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 167.666626, 479.0, 257.25, 74.25 ],
+					"presentation_rect" : [ 167.666626, 601.0, 257.25, 74.25 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -1001,11 +1286,180 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 446.5, 681.0, 454.5, 681.0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 446.5, 681.0, 454.5, 681.0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 446.5, 681.0, 382.666748, 681.0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 446.5, 681.0, 382.666748, 681.0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 454.5, 747.0, 451.5, 747.0 ],
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 169.583374, 498.0, 89.583374, 498.0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 382.666748, 747.0, 352.666748, 747.0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 451.5, 813.0, 89.583374, 813.0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 352.666748, 813.0, 89.583374, 813.0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 287.583374, 762.0, 89.583374, 762.0 ],
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 232.583374, 762.0, 89.583374, 762.0 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 169.583374, 762.0, 89.583374, 762.0 ],
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 105.25, 762.0, 89.583374, 762.0 ],
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 43.25, 762.0, 89.583374, 762.0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 89.583374, 801.0, 89.583374, 801.0 ],
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 517.75, 768.0, 517.0, 768.0, 517.0, 810.0, 459.25, 810.0 ],
+					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 459.25, 843.0, 159.0, 843.0, 159.0, 813.0, 89.583374, 813.0 ],
+					"source" : [ "obj-74", 0 ]
 				}
 
 			}
@@ -1051,9 +1505,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ]
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-60" : [ "RecWeekly", "RecWeek", 0 ],
+			"obj-59" : [ "Waste", "Waste", 0 ],
+			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
+			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
