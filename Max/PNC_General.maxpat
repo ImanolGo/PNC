@@ -61,11 +61,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1062.25, 431.5, 71.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 347.583313, 268.25, 52.0, 51.0 ],
+					"presentation_rect" : [ 353.708374, 269.25, 58.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Artifical Light",
-							"parameter_shortname" : "Art. Light",
+							"parameter_shortname" : "Artificial",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1.0,
 							"parameter_unitstyle" : 1
@@ -73,7 +73,7 @@
 
 					}
 ,
-					"varname" : "live.dialRecycle[1]"
+					"varname" : "live.dialArtificialLight"
 				}
 
 			}
@@ -88,11 +88,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 974.083374, 431.5, 62.416626, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 293.583313, 268.25, 52.0, 51.0 ],
+					"presentation_rect" : [ 293.583313, 268.25, 62.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Photocell Sensor",
-							"parameter_shortname" : "Photocell",
+							"parameter_longname" : "Solar Radiation",
+							"parameter_shortname" : "Solar",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1.0,
 							"parameter_unitstyle" : 1
@@ -100,7 +100,7 @@
 
 					}
 ,
-					"varname" : "live.dialPhotoCell"
+					"varname" : "live.dialSolarRadiation"
 				}
 
 			}
@@ -111,9 +111,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1101.25, 492.0, 157.0, 22.0 ],
+					"patching_rect" : [ 1101.25, 492.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /sun_artificial_light"
+					"text" : "prepend /sun_artificial"
 				}
 
 			}
@@ -124,9 +124,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 937.791687, 492.0, 135.0, 22.0 ],
+					"patching_rect" : [ 937.791687, 492.0, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /sun_photocell"
+					"text" : "prepend /sun_solar"
 				}
 
 			}
@@ -241,7 +241,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 944.0, 424.5, 230.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.166626, 261.75, 103.416687, 63.0 ],
+					"presentation_rect" : [ 296.166626, 261.75, 118.541748, 63.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -258,7 +258,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 672.5, 356.0, 594.25, 247.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.375, 246.5, 388.25, 94.5 ],
+					"presentation_rect" : [ 32.375, 246.5, 395.75, 94.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -670,18 +670,18 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 608.0, 49.0, 58.0, 22.0 ],
 					"restore" : 					{
+						"live.dialArtificialLight" : [ 0.450394 ],
 						"live.dialCompost" : [ 0.274803 ],
 						"live.dialFresh" : [ 0.354331 ],
-						"live.dialPhotoCell" : [ 0.0 ],
 						"live.dialRecycle" : [ 0.771654 ],
-						"live.dialRecycle[1]" : [ 0.0 ],
 						"live.dialRecycledWeek" : [ 0.116535 ],
+						"live.dialSolarRadiation" : [ 0.470079 ],
 						"live.dialWaste" : [ 0.187402 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u837009499"
+					"varname" : "u720001434"
 				}
 
 			}
@@ -779,7 +779,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "/recycled_compost 0.274803"
+					"text" : "/sun_photocell 0.470079"
 				}
 
 			}
@@ -1864,12 +1864,12 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
+			"obj-59" : [ "Waste", "Waste", 0 ],
+			"obj-60" : [ "RecWeekly", "RecWeek", 0 ],
 			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
 			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-60" : [ "RecWeekly", "RecWeek", 0 ],
-			"obj-20" : [ "Artifical Light", "Art. Light", 0 ],
-			"obj-59" : [ "Waste", "Waste", 0 ],
-			"obj-24" : [ "Photocell Sensor", "Photocell", 0 ],
+			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
 			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
 			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ]
 		}
