@@ -72,12 +72,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 364.0, 320.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dial" : [ 0.85 ]
+						"live.dialMasterVolume" : [ 0.85 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u664000777"
+					"varname" : "u305001223"
 				}
 
 			}
@@ -105,7 +105,7 @@
 
 					}
 ,
-					"varname" : "live.dial"
+					"varname" : "live.dialMasterVolume"
 				}
 
 			}

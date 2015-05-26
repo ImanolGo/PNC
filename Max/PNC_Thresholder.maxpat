@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 122.0, 210.0, 294.0, 294.0 ],
+		"rect" : [ 122.0, 210.0, 501.0, 328.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,13 +45,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 28.0, 17.499939, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dial" : [ 1.0 ],
-						"live.dial[5]" : [ 0.0 ]
+						"live.dialThrMax" : [ 1.0 ],
+						"live.dialThrMin" : [ 0.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u133003063"
+					"varname" : "u058011592"
 				}
 
 			}
@@ -90,7 +90,7 @@
 
 					}
 ,
-					"varname" : "live.dial[5]"
+					"varname" : "live.dialThrMin"
 				}
 
 			}
@@ -116,7 +116,7 @@
 
 					}
 ,
-					"varname" : "live.dial"
+					"varname" : "live.dialThrMax"
 				}
 
 			}
@@ -156,9 +156,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 150.0, 212.0, 22.0 ],
+					"patching_rect" : [ 28.0, 150.0, 90.0, 22.0 ],
 					"style" : "",
-					"text" : "zmap 0. 100. 0 127"
+					"text" : "zmap 0. 1. 0 1."
 				}
 
 			}

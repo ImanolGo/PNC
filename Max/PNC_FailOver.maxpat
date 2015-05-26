@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 908.0, 137.0, 739.0, 660.0 ],
+		"rect" : [ 907.0, 137.0, 739.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -167,9 +167,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 257.0, 284.0, 69.0, 22.0 ],
+					"patching_rect" : [ 257.0, 284.0, 35.0, 22.0 ],
 					"style" : "",
-					"text" : "FAILOVER"
+					"text" : "FAIL"
 				}
 
 			}
@@ -308,7 +308,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 58.0, 526.0, 157.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "WAT02"
 				}
 
 			}
@@ -577,9 +578,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }

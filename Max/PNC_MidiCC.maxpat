@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 459.0, 188.0, 778.0, 715.0 ],
+		"rect" : [ 459.0, 188.0, 722.0, 715.0 ],
 		"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -99,7 +99,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "TargetMin[10]",
+							"parameter_longname" : "TargetMax",
 							"parameter_shortname" : "Min",
 							"parameter_type" : 0,
 							"parameter_mmax" : 100.0,
@@ -114,7 +114,7 @@
 ,
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"tricolor2" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
-					"varname" : "TargetMin[10]"
+					"varname" : "TargetMax"
 				}
 
 			}
@@ -141,7 +141,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "TargetMin[9]",
+							"parameter_longname" : "TargetMin",
 							"parameter_shortname" : "Min",
 							"parameter_type" : 0,
 							"parameter_mmax" : 100.0,
@@ -156,7 +156,7 @@
 ,
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"tricolor2" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
-					"varname" : "TargetMin[9]"
+					"varname" : "TargetMin"
 				}
 
 			}
@@ -185,15 +185,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 402.0, 420.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"TargetMin[10]" : [ 100.0 ],
-						"TargetMin[9]" : [ 0.0 ],
-						"live.dial[1]" : [ 0.0 ],
-						"live.numbox[15]" : [ 127.0 ]
+						"TargetMax" : [ 100.0 ],
+						"TargetMin" : [ 0.0 ],
+						"live.dialCC" : [ 0.0 ],
+						"live.numboxCC" : [ 127.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u406001895"
+					"varname" : "u402001349"
 				}
 
 			}
@@ -250,7 +250,7 @@
 
 					}
 ,
-					"varname" : "live.dial[1]"
+					"varname" : "live.dialCC"
 				}
 
 			}
@@ -324,7 +324,7 @@
 					}
 ,
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"varname" : "live.numbox[15]"
+					"varname" : "live.numboxCC"
 				}
 
 			}
@@ -424,10 +424,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-70" : [ "TargetMin[10]", "Min", 0 ],
 			"obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-67" : [ "TargetMin[9]", "Min", 0 ]
+			"obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-70" : [ "TargetMax", "Min", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],

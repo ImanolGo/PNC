@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 147.0, 112.0, 963.0, 534.0 ],
+		"rect" : [ 381.0, 106.0, 963.0, 534.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.666626, 196.0, 30.0, 30.0 ],
+					"patching_rect" : [ 66.666626, 184.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -55,7 +55,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.666626, 423.0, 30.0, 30.0 ],
+					"patching_rect" : [ 66.666626, 400.5, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -253,7 +253,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.666626, 382.0, 175.0, 23.0 ],
+					"patching_rect" : [ 101.666626, 404.0, 175.0, 23.0 ],
 					"style" : "",
 					"text" : "print tcpReceived @popup 1"
 				}
@@ -312,6 +312,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
@@ -319,7 +320,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 66.666626, 59.0, 167.0, 22.0 ],
+					"patching_rect" : [ 66.666626, 59.0, 165.0, 22.0 ],
 					"style" : "",
 					"text" : "mxj net.udp.recv @port 7777"
 				}
@@ -347,7 +348,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.666626, 163.0, 179.0, 23.0 ],
+					"patching_rect" : [ 105.666626, 191.0, 179.0, 23.0 ],
 					"style" : "",
 					"text" : "print udpReceived @popup 1"
 				}
@@ -385,7 +386,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.333374, 99.0, 279.0, 22.0 ],
+					"patching_rect" : [ 336.333374, 99.0, 280.0, 22.0 ],
 					"style" : "",
 					"text" : "mxj net.udp.send @address 127.0.0.1 @port 7777"
 				}
@@ -420,16 +421,6 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 76.166626, 160.0, 76.166626, 160.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -529,16 +520,6 @@
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 76.166626, 375.0, 76.166626, 375.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 

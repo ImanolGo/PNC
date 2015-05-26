@@ -9,7 +9,8 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 80.0, 1203.0, 653.0 ],
+		"rect" : [ 34.0, 80.0, 1147.0, 653.0 ],
+		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -160,93 +161,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 846.0, 259.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dial" : [ 1.0 ],
-						"live.dial[1]" : [ 1.0 ]
+						"live.dialFresh" : [ 0.354331 ],
+						"live.dialRecycle" : [ 0.771654 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u371004032"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 834.5, 130.0, 65.0, 22.0 ],
-					"style" : "",
-					"text" : "closebang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 906.0, 130.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-42",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 906.0, 175.0, 43.0, 20.0 ],
-					"style" : "",
-					"text" : "recall 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-44",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.5, 175.0, 41.0, 20.0 ],
-					"style" : "",
-					"text" : "store 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autorestore" : "pncgeneral.json",
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 836.0, 223.0, 184.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
-						"parameter_enable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
-					}
-,
-					"style" : "",
-					"text" : "pattrstorage pncgeneral @savemode 3",
-					"varname" : "pncgeneral"
+					"varname" : "u695001052"
 				}
 
 			}
@@ -344,7 +265,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 51.166626, 252.75, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "/water_recycled 1."
+					"text" : "/water_fresh 0.354331"
 				}
 
 			}
@@ -538,7 +459,7 @@
 
 					}
 ,
-					"varname" : "live.dial[1]"
+					"varname" : "live.dialRecycle"
 				}
 
 			}
@@ -565,7 +486,7 @@
 
 					}
 ,
-					"varname" : "live.dial"
+					"varname" : "live.dialFresh"
 				}
 
 			}
@@ -601,7 +522,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.083374, 562.0, 66.0, 22.0 ],
+					"patching_rect" : [ 80.083374, 562.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "s udpSend"
 				}
@@ -887,38 +808,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"id" : "obj-57",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 807.375, 121.0, 240.25, 184.0 ],
-					"proportion" : 0.39,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"id" : "obj-41",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 40.5, 50.0, 258.5, 83.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -0.625, -1.0, 488.625, 702.5 ],
-					"proportion" : 0.39,
-					"style" : ""
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -982,29 +871,11 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 46.25, 241.0, 46.25, 241.0 ],
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -1100,24 +971,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1198,9 +1051,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ]
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1226,13 +1079,6 @@
 			}
 , 			{
 				"name" : "PNC_MasterVolume.maxpat",
-				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pncgeneral.json",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

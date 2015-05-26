@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 93.0, 1271.0, 777.0 ],
+		"rect" : [ 62.0, 90.0, 1125.0, 790.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,86 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 581.5, 434.0, 65.0, 22.0 ],
+					"style" : "",
+					"text" : "closebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 653.0, 434.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 653.0, 479.0, 43.0, 20.0 ],
+					"style" : "",
+					"text" : "recall 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 581.5, 479.0, 41.0, 20.0 ],
+					"style" : "",
+					"text" : "store 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autorestore" : "pnc.json",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 583.0, 527.0, 150.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 4, 45, 1411, 703 ],
+						"parameter_enable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"style" : "",
+					"text" : "pattrstorage pnc @savemode 3",
+					"varname" : "pnc"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -52,7 +132,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
+					"bgmode" : 1,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -74,7 +154,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
+					"bgmode" : 1,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -88,7 +168,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 131.0, 500.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 74.0, 1183.0, 864.0 ],
+					"presentation_rect" : [ 11.0, 74.0, 473.0, 930.0 ],
 					"varname" : "general",
 					"viewvisibility" : 1
 				}
@@ -362,6 +442,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -462,6 +551,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -542,6 +649,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -582,51 +698,51 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-54::obj-65::obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-54::obj-58::obj-11" : [ "Time[1]", "Time", 0 ],
-			"obj-54::obj-38::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-54::obj-56::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-54::obj-65::obj-11" : [ "Time", "Time", 0 ],
-			"obj-54::obj-18::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
-			"obj-53::obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-54::obj-46::obj-11" : [ "Time[3]", "Time", 0 ],
-			"obj-54::obj-72::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
-			"obj-53::obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-54::obj-22::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
-			"obj-54::obj-56::obj-67" : [ "TargetMin[12]", "Min", 0 ],
-			"obj-54::obj-15::obj-36" : [ "Control Number[4]", "CC", 0 ],
-			"obj-54::obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-54::obj-15::obj-67" : [ "TargetMin[16]", "Min", 0 ],
-			"obj-54::obj-67::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
-			"obj-54::obj-19::obj-67" : [ "TargetMin[14]", "Min", 0 ],
-			"obj-54::obj-19::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-54::obj-63::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-54::obj-18::obj-11" : [ "Time[4]", "Time", 0 ],
-			"obj-54::obj-11::obj-36" : [ "Control Number[5]", "CC", 0 ],
-			"obj-54::obj-56::obj-70" : [ "TargetMin[11]", "Min", 0 ],
-			"obj-54::obj-63::obj-70" : [ "TargetMin[10]", "Min", 0 ],
-			"obj-54::obj-15::obj-70" : [ "TargetMin[15]", "Min", 0 ],
-			"obj-54::obj-63::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-54::obj-22::obj-11" : [ "Time[2]", "Time", 0 ],
-			"obj-54::obj-72::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
-			"obj-54::obj-58::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
-			"obj-54::obj-11::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-54::obj-19::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-54::obj-38::obj-70" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-54::obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
+			"obj-54::obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
+			"obj-54::obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ],
+			"obj-54::obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
+			"obj-54::obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
+			"obj-54::obj-11::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-54::obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
+			"obj-54::obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-54::obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
+			"obj-54::obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
+			"obj-54::obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-54::obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-54::obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
+			"obj-54::obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
 			"obj-54::obj-68::obj-49" : [ "Max Threshold[1]", "ThrMax", 0 ],
-			"obj-54::obj-56::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-54::obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
+			"obj-54::obj-67::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
 			"obj-53::obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
-			"obj-54::obj-4::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
-			"obj-54::obj-38::obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-54::obj-46::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
-			"obj-54::obj-11::obj-70" : [ "TargetMin[17]", "Min", 0 ],
-			"obj-54::obj-67::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
+			"obj-54::obj-38::obj-70" : [ "TargetMax[2]", "Min", 0 ],
+			"obj-54::obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
+			"obj-54::obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ],
+			"obj-54::obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-54::obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-54::obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-54::obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-54::obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-54::obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-53::obj-28" : [ "Water Recycled", "Recyc", 0 ],
+			"obj-54::obj-22::obj-11" : [ "Time[3]", "Time", 0 ],
+			"obj-54::obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-53::obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-54::obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-54::obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-54::obj-19::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-54::obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-54::obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
+			"obj-54::obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-54::obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
+			"obj-54::obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-54::obj-4::obj-11" : [ "Time", "Time", 0 ],
+			"obj-54::obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
 			"obj-54::obj-68::obj-3" : [ "Threshold Min[3]", "ThrMin", 0 ],
-			"obj-54::obj-63::obj-67" : [ "TargetMin[9]", "Min", 0 ],
-			"obj-54::obj-19::obj-70" : [ "TargetMin[13]", "Min", 0 ],
-			"obj-54::obj-15::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-54::obj-11::obj-67" : [ "TargetMin[18]", "Min", 0 ],
-			"obj-54::obj-4::obj-11" : [ "Time[5]", "Time", 0 ]
+			"obj-54::obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-54::obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-54::obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -665,13 +781,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pncgeneral.json",
-				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "PNC_Moments.maxpat",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
@@ -693,13 +802,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pncwater.json",
-				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "PNC_RampDelay.maxpat",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
@@ -715,6 +817,13 @@
 			}
 , 			{
 				"name" : "PNC_Thresholder.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pnc.json",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

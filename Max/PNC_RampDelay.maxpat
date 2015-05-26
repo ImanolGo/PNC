@@ -46,13 +46,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 441.0, 140.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dial" : [ 0.0 ],
-						"live.dial[1]" : [ 55.11811 ]
+						"live.dialDelay" : [ 0.0 ],
+						"live.dialTime" : [ 55.11811 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u768002337"
+					"varname" : "u076000978"
 				}
 
 			}
@@ -252,7 +252,7 @@
 
 					}
 ,
-					"varname" : "live.dial[1]"
+					"varname" : "live.dialTime"
 				}
 
 			}
@@ -278,7 +278,7 @@
 
 					}
 ,
-					"varname" : "live.dial"
+					"varname" : "live.dialDelay"
 				}
 
 			}
@@ -463,8 +463,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-11" : [ "Time", "Time", 0 ]
+			"obj-11" : [ "Time", "Time", 0 ],
+			"obj-10" : [ "Delay (ms)", "Delay", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],
