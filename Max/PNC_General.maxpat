@@ -111,9 +111,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1101.25, 492.0, 128.0, 22.0 ],
+					"patching_rect" : [ 1101.25, 492.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /sun_artificial"
+					"text" : "prepend /sunlight_artificial"
 				}
 
 			}
@@ -124,9 +124,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 937.791687, 492.0, 113.0, 22.0 ],
+					"patching_rect" : [ 937.791687, 492.0, 135.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /sun_solar"
+					"text" : "prepend /sunlight_solar"
 				}
 
 			}
@@ -271,9 +271,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 449.75, 819.0, 158.0, 22.0 ],
+					"patching_rect" : [ 449.75, 819.0, 161.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /recycled_compost"
+					"text" : "prepend /recycling_compost"
 				}
 
 			}
@@ -288,7 +288,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 508.25, 695.5, 52.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 453.0, 159.75, 51.0, 51.0 ],
+					"presentation_rect" : [ 454.0, 159.75, 51.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Recycled Compost",
@@ -328,7 +328,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 445.0, 695.5, 52.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 402.0, 159.75, 52.0, 51.0 ],
+					"presentation_rect" : [ 344.708374, 159.75, 52.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Waste",
@@ -355,11 +355,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 373.166748, 695.5, 60.916626, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.0, 159.75, 59.0, 51.0 ],
+					"presentation_rect" : [ 392.708374, 159.75, 59.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "RecWeekly",
-							"parameter_shortname" : "RecWeek",
+							"parameter_longname" : "Recycled",
+							"parameter_shortname" : "Recycled",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1.0,
 							"parameter_unitstyle" : 1
@@ -367,7 +367,7 @@
 
 					}
 ,
-					"varname" : "live.dialRecycledWeek"
+					"varname" : "live.dialRecycled"
 				}
 
 			}
@@ -378,9 +378,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 782.0, 169.0, 22.0 ],
+					"patching_rect" : [ 442.0, 782.0, 147.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /recycled_totalWaste"
+					"text" : "prepend /recycling_waste"
 				}
 
 			}
@@ -391,9 +391,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.166748, 756.0, 141.0, 22.0 ],
+					"patching_rect" : [ 343.166748, 756.0, 160.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /recycled_week"
+					"text" : "prepend /recycling_recycled"
 				}
 
 			}
@@ -674,14 +674,14 @@
 						"live.dialCompost" : [ 0.274803 ],
 						"live.dialFresh" : [ 0.354331 ],
 						"live.dialRecycle" : [ 0.771654 ],
-						"live.dialRecycledWeek" : [ 0.116535 ],
+						"live.dialRecycled" : [ 0.116535 ],
 						"live.dialSolarRadiation" : [ 0.470079 ],
 						"live.dialWaste" : [ 0.187402 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u720001434"
+					"varname" : "u255001474"
 				}
 
 			}
@@ -779,7 +779,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "/sun_photocell 0.470079"
+					"text" : "/sun_solar 0.470079"
 				}
 
 			}
@@ -1864,14 +1864,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
-			"obj-59" : [ "Waste", "Waste", 0 ],
-			"obj-60" : [ "RecWeekly", "RecWeek", 0 ],
-			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
 			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
-			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ]
+			"obj-59" : [ "Waste", "Waste", 0 ],
+			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
+			"obj-60" : [ "Recycled", "Recycled", 0 ],
+			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
+			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
+			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
