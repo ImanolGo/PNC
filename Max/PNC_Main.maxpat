@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 66.0, 144.0, 1593.0, 726.0 ],
+		"rect" : [ 53.0, 144.0, 1593.0, 868.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -53,7 +53,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 624.0, 500.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 538.0, 74.0, 1199.0, 657.0 ],
+					"presentation_rect" : [ 550.0, 74.0, 1187.0, 745.0 ],
 					"varname" : "sunlight",
 					"viewvisibility" : 1
 				}
@@ -107,7 +107,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 452.0, 500.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 538.0, 74.0, 1178.0, 657.0 ],
+					"presentation_rect" : [ 550.0, 74.0, 1166.0, 745.0 ],
 					"varname" : "recycling",
 					"viewvisibility" : 1
 				}
@@ -223,7 +223,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 286.0, 500.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 540.5, 74.0, 1175.5, 657.0 ],
+					"presentation_rect" : [ 550.0, 74.0, 1166.0, 745.0 ],
 					"varname" : "water",
 					"viewvisibility" : 1
 				}
@@ -245,7 +245,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 131.0, 500.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 74.0, 1726.0, 657.0 ],
+					"presentation_rect" : [ 5.0, 74.0, 1732.0, 745.0 ],
 					"varname" : "general",
 					"viewvisibility" : 1
 				}
@@ -954,8 +954,8 @@
 			"obj-7::obj-43::obj-67" : [ "TargetMin[10]", "Min", 0 ],
 			"obj-7::obj-72::obj-10" : [ "Delay (ms)[10]", "Delay", 0 ],
 			"obj-7::obj-71::obj-70" : [ "TargetMax[11]", "Min", 0 ],
-			"obj-7::obj-59::obj-70" : [ "TargetMax[13]", "Min", 0 ],
 			"obj-7::obj-59::obj-67" : [ "TargetMin[13]", "Min", 0 ],
+			"obj-7::obj-59::obj-70" : [ "TargetMax[13]", "Min", 0 ],
 			"obj-54::obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
 			"obj-7::obj-18::obj-10" : [ "Delay (ms)[6]", "Delay", 0 ],
 			"obj-11::obj-41::obj-11" : [ "Time[20]", "Time", 0 ],
