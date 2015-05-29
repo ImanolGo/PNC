@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 427.0, 138.0, 740.0, 621.0 ],
+		"rect" : [ 238.0, 171.0, 708.0, 702.0 ],
 		"bgcolor" : [ 0.545583, 0.894453, 0.923554, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,15 +39,84 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.666626, 208.0, 101.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 41.166626, 52.5, 101.0, 20.0 ],
+					"style" : "",
+					"text" : "Volume Water"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 50.666626, 238.0, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 44.166626, 89.0, 44.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Volume Water",
+							"parameter_shortname" : "Volume",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 4,
+							"parameter_modmax" : 1.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialMasterVolumeWater"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "PNC_MidiCC.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 50.666626, 304.601746, 164.0, 55.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 41.166626, 149.0, 172.0, 55.0 ],
+					"varname" : "PNC_MidiCC[6]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 540.0, 232.0, 58.0, 22.0 ],
+					"patching_rect" : [ 543.0, 31.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"live.dialMasterVolumeWater" : [ 0.0 ]
+					}
+,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u325000661"
+					"varname" : "u274001372"
 				}
 
 			}
@@ -147,7 +216,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 356.0, 205.0, 50.0, 22.0 ],
+					"patching_rect" : [ 354.0, 136.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1016,7 +1085,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 435.0, 426.203552, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.5, 38.499939, 79.0, 20.0 ],
+					"presentation_rect" : [ 640.333374, 44.499939, 79.0, 20.0 ],
 					"style" : "",
 					"text" : "WatA Filters"
 				}
@@ -1038,7 +1107,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 435.0, 595.203552, 170.0, 55.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.5, 155.999939, 171.0, 55.0 ],
+					"presentation_rect" : [ 640.333374, 161.999939, 171.0, 55.0 ],
 					"varname" : "PNC_MidiCC[3]",
 					"viewvisibility" : 1
 				}
@@ -1057,7 +1126,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 435.0, 491.203552, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.5, 63.999939, 50.0, 22.0 ],
+					"presentation_rect" : [ 640.333374, 69.999939, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1079,7 +1148,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 435.0, 524.203552, 92.0, 57.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.5, 92.999939, 92.0, 57.0 ],
+					"presentation_rect" : [ 640.333374, 98.999939, 92.0, 57.0 ],
 					"varname" : "PNC_RampDelay[3]",
 					"viewvisibility" : 1
 				}
@@ -1101,7 +1170,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 232.166626, 590.0, 168.0, 55.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 223.166626, 156.0, 169.0, 55.0 ],
+					"presentation_rect" : [ 440.0, 162.0, 169.0, 55.0 ],
 					"varname" : "PNC_MidiCC[1]",
 					"viewvisibility" : 1
 				}
@@ -1120,7 +1189,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 232.166626, 486.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 223.166626, 64.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 440.0, 70.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1142,7 +1211,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 232.166626, 519.0, 92.0, 57.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 223.166626, 93.0, 92.0, 57.0 ],
+					"presentation_rect" : [ 440.0, 99.0, 92.0, 57.0 ],
 					"varname" : "PNC_RampDelay[1]",
 					"viewvisibility" : 1
 				}
@@ -1157,7 +1226,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 232.166626, 421.0, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 223.166626, 38.5, 79.0, 20.0 ],
+					"presentation_rect" : [ 440.0, 44.5, 79.0, 20.0 ],
 					"style" : "",
 					"text" : "Wat01 Vol"
 				}
@@ -1172,7 +1241,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 50.666626, 421.0, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.666626, 38.5, 79.0, 20.0 ],
+					"presentation_rect" : [ 249.5, 44.5, 79.0, 20.0 ],
 					"style" : "",
 					"text" : "Wat01 Freq"
 				}
@@ -1913,7 +1982,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 50.666626, 590.0, 164.0, 55.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.666626, 156.0, 172.0, 55.0 ],
+					"presentation_rect" : [ 249.5, 162.0, 172.0, 55.0 ],
 					"varname" : "PNC_MidiCC",
 					"viewvisibility" : 1
 				}
@@ -1932,7 +2001,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 50.666626, 486.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.666626, 64.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 249.5, 70.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1954,7 +2023,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.666626, 519.0, 92.0, 57.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.666626, 93.0, 92.0, 57.0 ],
+					"presentation_rect" : [ 249.5, 99.0, 92.0, 57.0 ],
 					"varname" : "PNC_RampDelay",
 					"viewvisibility" : 1
 				}
@@ -1967,7 +2036,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 356.0, 170.0, 31.0, 22.0 ],
+					"patching_rect" : [ 354.0, 101.0, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "+ 0."
 				}
@@ -1979,7 +2048,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 356.0, 241.0, 79.0, 22.0 ],
+					"patching_rect" : [ 354.0, 172.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "s water_total"
 				}
@@ -1992,7 +2061,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 356.0, 137.0, 57.0, 22.0 ],
+					"patching_rect" : [ 354.0, 68.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "pak 0. 0."
 				}
@@ -2005,7 +2074,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 412.666626, 100.0, 99.0, 22.0 ],
+					"patching_rect" : [ 410.666626, 31.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "r water_recycled"
 				}
@@ -2018,7 +2087,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.666626, 100.0, 81.0, 22.0 ],
+					"patching_rect" : [ 310.666626, 31.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "r water_fresh"
 				}
@@ -2030,7 +2099,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 164.666626, 151.0, 101.0, 22.0 ],
+					"patching_rect" : [ 164.666626, 129.0, 101.0, 22.0 ],
 					"style" : "",
 					"text" : "s water_recycled"
 				}
@@ -2042,7 +2111,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.666626, 151.0, 83.0, 22.0 ],
+					"patching_rect" : [ 35.666626, 129.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "s water_fresh"
 				}
@@ -2055,7 +2124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 164.666626, 114.0, 123.0, 22.0 ],
+					"patching_rect" : [ 164.666626, 92.0, 123.0, 22.0 ],
 					"style" : "",
 					"text" : "route /water_recycled"
 				}
@@ -2068,7 +2137,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.666626, 68.0, 88.0, 22.0 ],
+					"patching_rect" : [ 35.666626, 46.0, 88.0, 22.0 ],
 					"style" : "",
 					"text" : "r udpReceived"
 				}
@@ -2081,7 +2150,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 35.666626, 114.0, 105.0, 22.0 ],
+					"patching_rect" : [ 35.666626, 92.0, 105.0, 22.0 ],
 					"style" : "",
 					"text" : "route /water_fresh"
 				}
@@ -2094,9 +2163,26 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.666626, 39.0, 61.0, 20.0 ],
+					"patching_rect" : [ 35.666626, 17.0, 61.0, 20.0 ],
 					"style" : "",
 					"text" : "Water"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"id" : "obj-17",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.666626, 235.75, 44.0, 49.25 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 42.166626, 80.5, 50.0, 63.0 ],
+					"proportion" : 0.39,
+					"style" : ""
 				}
 
 			}
@@ -2160,7 +2246,7 @@
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 45.166626, 99.0, 174.166626, 99.0 ],
+					"midpoints" : [ 45.166626, 77.0, 174.166626, 77.0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -2275,6 +2361,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2377,48 +2472,53 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
-			"obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
-			"obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
-			"obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
-			"obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
-			"obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
-			"obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
-			"obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
-			"obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-11::obj-36" : [ "Control Number", "CC", 0 ],
 			"obj-68::obj-49" : [ "Max Threshold[1]", "ThrMax", 0 ],
-			"obj-4::obj-11" : [ "Time", "Time", 0 ],
 			"obj-22::obj-11" : [ "Time[3]", "Time", 0 ],
-			"obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
-			"obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ],
-			"obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
-			"obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
-			"obj-38::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-68::obj-3" : [ "Threshold Min[3]", "ThrMin", 0 ],
-			"obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
-			"obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ],
+			"obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
+			"obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
 			"obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
-			"obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
-			"obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
-			"obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
-			"obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
-			"obj-19::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-2::obj-50" : [ "live.numbox[25]", "live.numbox", 0 ],
+			"obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
 			"obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-38::obj-70" : [ "TargetMax[2]", "Min", 0 ],
+			"obj-11::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
+			"obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
+			"obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
+			"obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
+			"obj-4::obj-11" : [ "Time", "Time", 0 ],
+			"obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-2::obj-70" : [ "TargetMax[6]", "Min", 0 ],
+			"obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
+			"obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
+			"obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-2::obj-67" : [ "TargetMin[6]", "Min", 0 ],
+			"obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ],
+			"obj-68::obj-3" : [ "Threshold Min[3]", "ThrMin", 0 ],
+			"obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
+			"obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
+			"obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-2::obj-36" : [ "Control Number[6]", "CC", 0 ],
+			"obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
+			"obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
+			"obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
+			"obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
 			"obj-67::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
-			"obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ]
+			"obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
+			"obj-5" : [ "Volume Water", "Volume", 0 ],
+			"obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
+			"obj-19::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
