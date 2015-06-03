@@ -318,11 +318,11 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 66.666626, 59.0, 165.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.666626, 59.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj net.udp.recv @port 7777"
+					"text" : "udpreceive 7777"
 				}
 
 			}
@@ -384,11 +384,10 @@
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.333374, 99.0, 280.0, 22.0 ],
+					"numoutlets" : 0,
+					"patching_rect" : [ 336.333374, 99.0, 140.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj net.udp.send @address 127.0.0.1 @port 7777"
+					"text" : "udpsend 127.0.0.1 7777"
 				}
 
 			}
