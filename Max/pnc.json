@@ -212,7 +212,12 @@
 					"sunlight::PNC_MidiCC[5]::TargetMax" : [ 100.0 ],
 					"sunlight::PNC_MidiCC[5]::TargetMin" : [ 0.0 ],
 					"sunlight::PNC_MidiCC[5]::live.dialCC" : [ 22.0 ],
-					"sunlight::PNC_MidiCC[5]::live.numboxCC" : [ 59.500008 ]
+					"sunlight::PNC_MidiCC[5]::live.numboxCC" : [ 59.500008 ],
+					"air::u413012028" : [  ],
+					"air::PNC_NoteOut::live.dialNoteOutChannel" : [ 3.0 ],
+					"air::PNC_NoteOut::live.numboxCC" : [ 105.0 ],
+					"air::PNC_NoteOut[1]::live.dialNoteOutChannel" : [ 5.0 ],
+					"air::PNC_NoteOut[1]::live.numboxCC" : [ 74.0 ]
 				}
 
 			}
