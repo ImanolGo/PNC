@@ -218,15 +218,15 @@
 					"air::live.numbox[2]" : [ 0.0 ],
 					"air::live.numbox[3]" : [ 0.0 ],
 					"air::live.numbox[4]" : [ 30.0 ],
-					"air::live.numbox[5]" : [ 0.0 ],
-					"air::PNC_NoteOut::live.dialNoteOutChannel" : [ 4.0 ],
-					"air::PNC_NoteOut::live.numboxCC" : [ 64.0 ],
+					"air::live.numbox[5]" : [ 2.0 ],
+					"air::PNC_NoteOut::live.dialNoteOutChannel" : [ 3.0 ],
+					"air::PNC_NoteOut::live.numboxCC" : [ 58.0 ],
 					"air::PNC_NoteOut[1]::live.dialNoteOutChannel" : [ 6.0 ],
-					"air::PNC_NoteOut[1]::live.numboxCC" : [ 64.0 ],
+					"air::PNC_NoteOut[1]::live.numboxCC" : [ 61.0 ],
 					"air::PNC_MidiCC::TargetMax" : [ 100.0 ],
 					"air::PNC_MidiCC::TargetMin" : [ 0.0 ],
 					"air::PNC_MidiCC::live.dialCC" : [ 25.0 ],
-					"air::PNC_MidiCC::live.numboxCC" : [ 127.0 ]
+					"air::PNC_MidiCC::live.numboxCC" : [ 54.0 ]
 				}
 
 			}
