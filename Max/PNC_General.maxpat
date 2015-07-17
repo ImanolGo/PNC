@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 95.0, 1147.0, 857.0 ],
+		"rect" : [ 39.0, 193.0, 1068.0, 872.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,225 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1029.0, 640.5, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-81",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1062.25, 695.5, 71.0, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 353.375, 352.25, 58.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "WeatherPrecipitation",
+							"parameter_shortname" : "Prec.",
+							"parameter_type" : 0,
+							"parameter_mmax" : 82.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialWeatherPrecipitation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-83",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 974.083374, 695.5, 62.416626, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 293.249939, 351.25, 62.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "WeatherTemperature",
+							"parameter_shortname" : "Temp.",
+							"parameter_type" : 0,
+							"parameter_mmax" : 90.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialWeatherTemperature"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1058.25, 796.0, 175.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /weather_precipitation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 937.791687, 756.0, 175.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /weather_temperature"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 727.083374, 826.0, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "s udpSend"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-88",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 703.083374, 656.0, 140.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 37.333252, 339.75, 122.333374, 33.0 ],
+					"style" : "",
+					"text" : "Weather Information"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 821.875, 710.0, 51.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 193.916626, 380.25, 67.0, 22.0 ],
+					"style" : "",
+					"text" : "WEA-SUN",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 753.083374, 710.0, 51.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 119.666626, 380.25, 62.0, 22.0 ],
+					"style" : "",
+					"text" : "WEA-AIR",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 680.75, 710.0, 51.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 37.333252, 380.25, 67.0, 22.0 ],
+					"style" : "",
+					"text" : "WEA-WAT",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-93",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 727.083374, 776.0, 85.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /start"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.47451, 0.478431, 0.47451, 1.0 ],
+					"id" : "obj-94",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 944.0, 688.5, 230.0, 58.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 295.833252, 344.75, 118.541748, 63.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"id" : "obj-95",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 672.5, 620.0, 594.25, 247.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 32.041626, 329.5, 395.75, 94.5 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -61,7 +280,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1062.25, 431.5, 71.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 353.708374, 269.25, 58.0, 51.0 ],
+					"presentation_rect" : [ 353.375, 254.25, 58.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Artifical Light",
@@ -88,7 +307,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 974.083374, 431.5, 62.416626, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 293.583313, 268.25, 62.0, 51.0 ],
+					"presentation_rect" : [ 293.249939, 253.25, 62.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Solar Radiation",
@@ -151,7 +370,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 703.083374, 392.0, 140.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.666626, 256.75, 122.333374, 20.0 ],
+					"presentation_rect" : [ 37.333252, 241.75, 122.333374, 20.0 ],
 					"style" : "",
 					"text" : "Sunlight Sequence"
 				}
@@ -166,7 +385,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 867.083374, 446.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 219.0, 284.75, 49.0, 22.0 ],
+					"presentation_rect" : [ 218.666626, 269.75, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "SUN99"
 				}
@@ -181,7 +400,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 812.083374, 446.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.0, 284.75, 49.0, 22.0 ],
+					"presentation_rect" : [ 161.666626, 269.75, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "SUN03"
 				}
@@ -196,7 +415,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 749.083374, 446.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 101.0, 284.75, 49.0, 22.0 ],
+					"presentation_rect" : [ 100.666626, 269.75, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "SUN02"
 				}
@@ -211,7 +430,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 680.75, 446.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.666626, 284.75, 49.0, 22.0 ],
+					"presentation_rect" : [ 37.333252, 269.75, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "SUN01"
 				}
@@ -241,7 +460,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 944.0, 424.5, 230.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.166626, 261.75, 118.541748, 63.0 ],
+					"presentation_rect" : [ 295.833252, 246.75, 118.541748, 63.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -258,7 +477,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 672.5, 356.0, 594.25, 247.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.375, 246.5, 395.75, 94.5 ],
+					"presentation_rect" : [ 32.041626, 231.5, 395.75, 94.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -555,7 +774,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 976.5, 139.5, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 209.375, 383.25, 101.0, 20.0 ],
+					"presentation_rect" : [ 208.166626, 455.25, 101.0, 20.0 ],
 					"style" : "",
 					"text" : "Failover"
 				}
@@ -582,7 +801,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1053.5, 169.5, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 269.375, 418.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 268.166626, 490.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "backup"
 				}
@@ -597,7 +816,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 985.5, 169.5, 51.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 204.875, 418.25, 52.0, 22.0 ],
+					"presentation_rect" : [ 203.666626, 490.25, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "primary"
 				}
@@ -676,12 +895,14 @@
 						"live.dialRecycle" : [ 0.771654 ],
 						"live.dialRecycled" : [ 0.116535 ],
 						"live.dialSolarRadiation" : [ 0.470079 ],
-						"live.dialWaste" : [ 0.187402 ]
+						"live.dialWaste" : [ 0.187402 ],
+						"live.dialWeatherPrecipitation" : [ 51.653543 ],
+						"live.dialWeatherTemperature" : [ 8.716535 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u255001474"
+					"varname" : "u449000837"
 				}
 
 			}
@@ -702,7 +923,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 888.0, 220.0, 45.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 46.375, 387.25, 50.0, 54.0 ],
+					"presentation_rect" : [ 45.166626, 459.25, 50.0, 54.0 ],
 					"varname" : "PNC_MasterVolume",
 					"viewvisibility" : 1
 				}
@@ -717,7 +938,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 767.75, 143.5, 101.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 46.375, 361.25, 101.0, 20.0 ],
+					"presentation_rect" : [ 45.166626, 433.25, 101.0, 20.0 ],
 					"style" : "",
 					"text" : "Master Volume"
 				}
@@ -730,7 +951,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 427.75, 264.0, 107.0, 20.0 ],
+					"patching_rect" : [ 241.75, 281.0, 107.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 282.75, 107.0, 20.0 ],
 					"style" : "",
@@ -745,7 +966,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.75, 264.0, 107.0, 20.0 ],
+					"patching_rect" : [ 237.625, 234.0, 107.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 237.75, 107.0, 20.0 ],
 					"style" : "",
@@ -760,7 +981,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 427.75, 240.0, 291.0, 22.0 ],
+					"patching_rect" : [ 236.625, 298.0, 464.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 304.75, 267.0, 22.0 ],
 					"style" : "",
@@ -775,11 +996,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.75, 240.0, 174.0, 22.0 ],
+					"patching_rect" : [ 241.75, 252.0, 458.875, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 617.166626, 258.75, 174.0, 22.0 ],
+					"presentation_rect" : [ 617.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/sun_solar 0.470079"
+					"text" : "/start WEA01"
 				}
 
 			}
@@ -847,7 +1068,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 723.166626, 133.25, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "REC01",
+					"text" : "WEA01",
 					"textjustification" : 1
 				}
 
@@ -899,7 +1120,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 829.75, 173.5, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 101.875, 419.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 100.666626, 491.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "unmute"
 				}
@@ -914,7 +1135,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 776.75, 173.5, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 101.875, 392.25, 36.0, 22.0 ],
+					"presentation_rect" : [ 100.666626, 464.25, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "mute"
 				}
@@ -1168,7 +1389,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1053.5, 248.0, 85.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 329.708374, 418.25, 85.0, 22.0 ],
+					"presentation_rect" : [ 328.5, 490.25, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "PNC_Failover"
 				}
@@ -1248,7 +1469,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 760.75, 113.0, 189.25, 216.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 33.583374, 356.0, 135.791626, 94.5 ],
+					"presentation_rect" : [ 32.375, 428.0, 135.791626, 94.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -1265,7 +1486,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 971.5, 113.0, 189.25, 216.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.875, 376.25, 257.25, 74.25 ],
+					"presentation_rect" : [ 176.666626, 448.25, 257.25, 74.25 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -1488,7 +1709,7 @@
 					"destination" : [ "obj-36", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 251.25, 225.0, 406.25, 225.0 ],
+					"midpoints" : [ 251.25, 225.0, 691.125, 225.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -1498,7 +1719,7 @@
 					"destination" : [ "obj-37", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 362.25, 225.0, 709.25, 225.0 ],
+					"midpoints" : [ 362.25, 225.0, 691.125, 225.0 ],
 					"source" : [ "obj-3", 1 ]
 				}
 
@@ -1804,6 +2025,46 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1038.5, 681.0, 1071.75, 681.0 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1038.5, 681.0, 1071.75, 681.0 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1038.5, 681.0, 983.583374, 681.0 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1038.5, 681.0, 983.583374, 681.0 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1844,11 +2105,41 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1071.75, 747.0, 1067.75, 747.0 ],
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 105.25, 498.0, 89.583374, 498.0 ],
 					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 983.583374, 747.0, 947.291687, 747.0 ],
+					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1067.75, 813.0, 736.583374, 813.0 ],
+					"source" : [ "obj-84", 0 ]
 				}
 
 			}
@@ -1862,16 +2153,68 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 947.291687, 813.0, 736.583374, 813.0 ],
+					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-93", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 831.375, 762.0, 736.583374, 762.0 ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-93", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 762.583374, 762.0, 736.583374, 762.0 ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-93", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 690.25, 762.0, 736.583374, 762.0 ],
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 736.583374, 801.0, 736.583374, 801.0 ],
+					"source" : [ "obj-93", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
-			"obj-59" : [ "Waste", "Waste", 0 ],
 			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-60" : [ "Recycled", "Recycled", 0 ],
-			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
-			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
+			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
 			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ]
+			"obj-59" : [ "Waste", "Waste", 0 ],
+			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
+			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
+			"obj-24" : [ "Solar Radiation", "Solar", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

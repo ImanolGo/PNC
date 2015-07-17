@@ -39,11 +39,43 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1013.75, 123.0, 30.0, 21.0 ],
+					"style" : "",
+					"text" : "!= 8"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1013.75, 157.0, 179.0, 21.0 ],
+					"style" : "",
+					"text" : "script sendbox special hidden $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 1,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-13",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -286,7 +318,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 807.75, 198.0, 30.0, 21.0 ],
 					"style" : "",
-					"text" : "!= 6"
+					"text" : "!= 7"
 				}
 
 			}
@@ -299,9 +331,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 807.75, 232.0, 179.0, 21.0 ],
+					"patching_rect" : [ 807.75, 232.0, 165.0, 21.0 ],
 					"style" : "",
-					"text" : "script sendbox special hidden $1"
+					"text" : "script sendbox time hidden $1"
 				}
 
 			}
@@ -330,9 +362,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 807.75, 157.0, 165.0, 21.0 ],
+					"patching_rect" : [ 807.75, 157.0, 178.0, 21.0 ],
 					"style" : "",
-					"text" : "script sendbox time hidden $1"
+					"text" : "script sendbox energy hidden $1"
 				}
 
 			}
@@ -361,9 +393,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 592.75, 227.0, 178.0, 21.0 ],
+					"patching_rect" : [ 592.75, 227.0, 184.0, 21.0 ],
 					"style" : "",
-					"text" : "script sendbox energy hidden $1"
+					"text" : "script sendbox weather hidden $1"
 				}
 
 			}
@@ -537,7 +569,7 @@
 					"presentation_rect" : [ 144.0, 12.0, 1033.0, 49.0 ],
 					"style" : "velvet",
 					"tabcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
-					"tabs" : [ "General", "Water", "Air", "Recycling", "Sunlight", "Energy", "Time", "Special" ],
+					"tabs" : [ "General", "Water", "Air", "Recycling", "Sunlight", "Weather", "Energy", "Time", "Special" ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -574,10 +606,40 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1023.25, 147.0, 1023.25, 147.0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1023.25, 292.5, 602.25, 292.5 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 196.5, 105.0, 393.5, 105.0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 196.5, 111.5, 1023.25, 111.5 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -866,6 +928,7 @@
 			"obj-7::obj-7" : [ "Volume Recycling", "Volume", 0 ],
 			"obj-11::obj-55::obj-50" : [ "live.numbox[19]", "live.numbox", 0 ],
 			"obj-11::obj-36::obj-10" : [ "Delay (ms)[19]", "Delay", 0 ],
+			"obj-53::obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
 			"obj-7::obj-66::obj-67" : [ "TargetMin[12]", "Min", 0 ],
 			"obj-7::obj-59::obj-70" : [ "TargetMax[13]", "Min", 0 ],
 			"obj-54::obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
@@ -889,7 +952,7 @@
 			"obj-54::obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
 			"obj-7::obj-72::obj-10" : [ "Delay (ms)[10]", "Delay", 0 ],
 			"obj-11::obj-53::obj-3" : [ "Threshold Min[14]", "ThrMin", 0 ],
-			"obj-13::obj-6" : [ "live.numbox[45]", "live.numbox", 0 ],
+			"obj-13::obj-7" : [ "live.numbox[45]", "live.numbox", 0 ],
 			"obj-7::obj-19::obj-50" : [ "live.numbox[8]", "live.numbox", 0 ],
 			"obj-7::obj-81::obj-36" : [ "Control Number[15]", "CC", 0 ],
 			"obj-13::obj-3::obj-50" : [ "live.numbox[25]", "live.numbox", 0 ],
@@ -898,7 +961,7 @@
 			"obj-7::obj-18::obj-10" : [ "Delay (ms)[6]", "Delay", 0 ],
 			"obj-7::obj-66::obj-70" : [ "TargetMax[12]", "Min", 0 ],
 			"obj-11::obj-35::obj-36" : [ "Control Number[21]", "CC", 0 ],
-			"obj-13::obj-74" : [ "live.numbox[44]", "live.numbox[7]", 0 ],
+			"obj-13::obj-6" : [ "live.numbox[44]", "live.numbox", 0 ],
 			"obj-54::obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
 			"obj-11::obj-15::obj-50" : [ "live.numbox[16]", "live.numbox", 0 ],
 			"obj-13::obj-194::obj-36" : [ "Note Out Midi Channel[12]", "Channel", 0 ],
@@ -939,6 +1002,7 @@
 			"obj-7::obj-34::obj-49" : [ "Max Threshold[4]", "ThrMax", 0 ],
 			"obj-11::obj-15::obj-70" : [ "TargetMax[16]", "Min", 0 ],
 			"obj-11::obj-35::obj-67" : [ "TargetMin[21]", "Min", 0 ],
+			"obj-53::obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
 			"obj-7::obj-18::obj-11" : [ "Time[6]", "Time", 0 ],
 			"obj-11::obj-40::obj-70" : [ "TargetMax[22]", "Min", 0 ],
 			"obj-11::obj-40::obj-67" : [ "TargetMin[22]", "Min", 0 ],
@@ -972,8 +1036,8 @@
 			"obj-11::obj-11::obj-3" : [ "Threshold Min[15]", "ThrMin", 0 ],
 			"obj-13::obj-3::obj-36" : [ "Note Out Midi Channel", "Channel", 0 ],
 			"obj-53::obj-60" : [ "Recycled", "Recycled", 0 ],
-			"obj-54::obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-54::obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-54::obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-11::obj-15::obj-67" : [ "TargetMin[16]", "Min", 0 ],
 			"obj-11::obj-46::obj-11" : [ "Time[21]", "Time", 0 ],
 			"obj-11::obj-45::obj-50" : [ "live.numbox[23]", "live.numbox", 0 ],
@@ -997,7 +1061,7 @@
 			"obj-7::obj-66::obj-36" : [ "Control Number[12]", "CC", 0 ],
 			"obj-11::obj-18::obj-11" : [ "Time[14]", "Time", 0 ],
 			"obj-11::obj-45::obj-67" : [ "TargetMin[23]", "Min", 0 ],
-			"obj-13::obj-7" : [ "live.numbox[40]", "live.numbox", 0 ],
+			"obj-13::obj-74" : [ "live.numbox[40]", "live.numbox[7]", 0 ],
 			"obj-13::obj-29" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-53::obj-24" : [ "Solar Radiation", "Solar", 0 ],
 			"obj-7::obj-15::obj-36" : [ "Control Number[7]", "CC", 0 ],
