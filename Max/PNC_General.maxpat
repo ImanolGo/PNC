@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 39.0, 193.0, 1068.0, 872.0 ],
+		"rect" : [ 39.0, 193.0, 911.0, 872.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,86 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1076.25, 845.0, 175.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /weather_cloud_cover"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1062.25, 814.0, 135.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /weather_wind"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-96",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1162.25, 695.5, 71.0, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 421.625, 350.25, 66.875, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Weather Cloud Cover",
+							"parameter_shortname" : "Cloudiness",
+							"parameter_type" : 1,
+							"parameter_mmax" : 9.0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dialWeatherCloudCover"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-89",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1089.75, 695.5, 71.0, 51.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 369.916626, 350.25, 58.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Weather Wind",
+							"parameter_shortname" : "Wind",
+							"parameter_type" : 0,
+							"parameter_mmax" : 20.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialWeatherWind"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-75",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -59,15 +139,15 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1062.25, 695.5, 71.0, 51.0 ],
+					"patching_rect" : [ 1017.0, 695.5, 71.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 353.375, 352.25, 58.0, 51.0 ],
+					"presentation_rect" : [ 319.0, 350.25, 58.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "WeatherPrecipitation",
 							"parameter_shortname" : "Prec.",
 							"parameter_type" : 0,
-							"parameter_mmax" : 82.0,
+							"parameter_mmax" : 0.3,
 							"parameter_unitstyle" : 1
 						}
 
@@ -86,9 +166,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 974.083374, 695.5, 62.416626, 51.0 ],
+					"patching_rect" : [ 950.083374, 695.5, 62.416626, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 293.249939, 351.25, 62.0, 51.0 ],
+					"presentation_rect" : [ 268.374939, 350.25, 62.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "WeatherTemperature",
@@ -111,7 +191,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1058.25, 796.0, 175.0, 22.0 ],
+					"patching_rect" : [ 994.25, 786.0, 175.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend /weather_precipitation"
 				}
@@ -151,8 +231,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 703.083374, 656.0, 140.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 37.333252, 339.75, 122.333374, 33.0 ],
+					"presentation_rect" : [ 37.333252, 339.75, 130.833374, 20.0 ],
 					"style" : "",
 					"text" : "Weather Information"
 				}
@@ -161,12 +240,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-90",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 821.875, 710.0, 51.0, 35.0 ],
+					"patching_rect" : [ 821.875, 710.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 193.916626, 380.25, 67.0, 22.0 ],
 					"style" : "",
@@ -178,12 +256,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-91",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 753.083374, 710.0, 51.0, 35.0 ],
+					"patching_rect" : [ 753.083374, 710.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 119.666626, 380.25, 62.0, 22.0 ],
 					"style" : "",
@@ -195,12 +272,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-92",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 680.75, 710.0, 51.0, 35.0 ],
+					"patching_rect" : [ 680.75, 710.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 37.333252, 380.25, 67.0, 22.0 ],
 					"style" : "",
@@ -231,9 +307,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 944.0, 688.5, 230.0, 58.0 ],
+					"patching_rect" : [ 944.0, 688.5, 314.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 295.833252, 344.75, 118.541748, 63.0 ],
+					"presentation_rect" : [ 270.958252, 343.75, 224.541748, 63.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -248,9 +324,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 672.5, 620.0, 594.25, 247.0 ],
+					"patching_rect" : [ 672.5, 620.0, 594.25, 267.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.041626, 329.5, 395.75, 94.5 ],
+					"presentation_rect" : [ 32.041626, 329.5, 478.75, 94.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -896,13 +972,15 @@
 						"live.dialRecycled" : [ 0.116535 ],
 						"live.dialSolarRadiation" : [ 0.470079 ],
 						"live.dialWaste" : [ 0.187402 ],
-						"live.dialWeatherPrecipitation" : [ 51.653543 ],
-						"live.dialWeatherTemperature" : [ 8.716535 ]
+						"live.dialWeatherCloudCover" : [ 1.0 ],
+						"live.dialWeatherPrecipitation" : [ 0.09685 ],
+						"live.dialWeatherTemperature" : [ 41.811024 ],
+						"live.dialWeatherWind" : [ 2.661417 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u449000837"
+					"varname" : "u758003518"
 				}
 
 			}
@@ -1000,7 +1078,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/start WEA01"
+					"text" : "/weather_precipitation 0.09685"
 				}
 
 			}
@@ -2028,7 +2106,7 @@
 					"destination" : [ "obj-81", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1038.5, 681.0, 1071.75, 681.0 ],
+					"midpoints" : [ 1038.5, 681.0, 1026.5, 681.0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -2038,7 +2116,7 @@
 					"destination" : [ "obj-81", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1038.5, 681.0, 1071.75, 681.0 ],
+					"midpoints" : [ 1038.5, 681.0, 1026.5, 681.0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -2048,7 +2126,7 @@
 					"destination" : [ "obj-83", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1038.5, 681.0, 983.583374, 681.0 ],
+					"midpoints" : [ 1038.5, 681.0, 959.583374, 681.0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -2058,7 +2136,25 @@
 					"destination" : [ "obj-83", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1038.5, 681.0, 983.583374, 681.0 ],
+					"midpoints" : [ 1038.5, 681.0, 959.583374, 681.0 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -2108,7 +2204,7 @@
 					"destination" : [ "obj-84", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1071.75, 747.0, 1067.75, 747.0 ],
+					"midpoints" : [ 1026.5, 747.0, 1003.75, 747.0 ],
 					"source" : [ "obj-81", 0 ]
 				}
 
@@ -2128,7 +2224,7 @@
 					"destination" : [ "obj-86", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 983.583374, 747.0, 947.291687, 747.0 ],
+					"midpoints" : [ 959.583374, 747.0, 947.291687, 747.0 ],
 					"source" : [ "obj-83", 0 ]
 				}
 
@@ -2138,7 +2234,7 @@
 					"destination" : [ "obj-87", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1067.75, 813.0, 736.583374, 813.0 ],
+					"midpoints" : [ 1003.75, 813.0, 736.583374, 813.0 ],
 					"source" : [ "obj-84", 0 ]
 				}
 
@@ -2160,6 +2256,16 @@
 					"hidden" : 0,
 					"midpoints" : [ 947.291687, 813.0, 736.583374, 813.0 ],
 					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1099.25, 779.75, 1071.75, 779.75 ],
+					"source" : [ "obj-89", 0 ]
 				}
 
 			}
@@ -2203,16 +2309,48 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1171.75, 795.25, 1085.75, 795.25 ],
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1071.75, 846.0, 904.166687, 846.0, 904.166687, 815.0, 736.583374, 815.0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1085.75, 877.0, 911.166687, 877.0, 911.166687, 815.0, 736.583374, 815.0 ],
+					"source" : [ "obj-98", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
+			"obj-89" : [ "Weather Wind", "Wind", 0 ],
 			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-60" : [ "Recycled", "Recycled", 0 ],
+			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
 			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
 			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
 			"obj-59" : [ "Waste", "Waste", 0 ],
 			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
 			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
 			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ]
 		}
