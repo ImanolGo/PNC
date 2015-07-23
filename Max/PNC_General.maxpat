@@ -176,9 +176,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 971.5, 710.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 315.166626, 470.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 315.166626, 470.25, 44.0, 22.0 ],
 					"style" : "",
-					"text" : "REC99"
+					"text" : "AIR99"
 				}
 
 			}
@@ -1215,7 +1215,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u926005606"
+					"varname" : "u169011583"
 				}
 
 			}
