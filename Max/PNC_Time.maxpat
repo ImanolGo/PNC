@@ -48,8 +48,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 44.0, 29.896362, 110.0, 20.0 ],
 					"style" : "",
-					"text" : "Time Mode",
-					"textjustification" : 0
+					"text" : "Time Mode"
 				}
 
 			}
@@ -1126,7 +1125,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u728012880"
+					"varname" : "u829007971"
 				}
 
 			}
@@ -1160,11 +1159,11 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
 			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
 			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ]
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

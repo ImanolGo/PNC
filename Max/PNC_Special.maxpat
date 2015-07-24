@@ -839,7 +839,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 37.0, 126.0, 483.0, 473.0 ],
+						"rect" : [ 37.0, 126.0, 500.0, 473.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -867,6 +867,49 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 196.0, 311.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 196.0, 269.0, 36.0, 22.0 ],
+									"style" : "",
+									"text" : "sel 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 196.0, 222.0, 97.0, 22.0 ],
+									"style" : "",
+									"text" : "zl compare SPE"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
@@ -924,12 +967,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 203.0, 97.0, 50.0, 35.0 ],
+									"patching_rect" : [ 203.0, 97.0, 77.0, 22.0 ],
 									"style" : "",
 									"text" : "WEA-SUN"
 								}
@@ -957,7 +999,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 189.0, 222.0, 64.0, 22.0 ],
+									"patching_rect" : [ 203.0, 184.0, 64.0, 22.0 ],
 									"style" : "",
 									"text" : "WEA"
 								}
@@ -1012,6 +1054,24 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-28", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1050,6 +1110,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1072,6 +1141,16 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 205.5, 292.0, 205.5, 292.0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -1125,7 +1204,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u054001385"
+					"varname" : "u069008038"
 				}
 
 			}
@@ -1159,11 +1238,11 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
 			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
 			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ]
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
