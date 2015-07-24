@@ -524,6 +524,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-23",
@@ -1016,7 +1017,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 445.25, 180.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "set bay_air_2"
+									"text" : "set bay_air_1"
 								}
 
 							}
@@ -1042,7 +1043,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 59.5, 180.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "set floor_air_2"
+									"text" : "set floor_air_1"
 								}
 
 							}
@@ -1669,7 +1670,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"embedsnapshot" : 0
 	}
 
 }

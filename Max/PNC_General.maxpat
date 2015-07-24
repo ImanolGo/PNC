@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 718.0, 83.0, 1340.0, 1076.0 ],
+		"rect" : [ 546.0, 83.0, 1340.0, 1076.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -429,7 +429,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 119.666626, 569.75, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "SHA02"
+					"text" : "SHA99"
 				}
 
 			}
@@ -1656,7 +1656,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u133001817"
+					"varname" : "u345006930"
 				}
 
 			}
@@ -1754,7 +1754,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/start WEA-SUN"
+					"text" : "/weather_temperature 41.811024"
 				}
 
 			}
@@ -3340,18 +3340,18 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
-			"obj-60" : [ "Recycled", "Recycled", 0 ],
-			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
 			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
-			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
-			"obj-59" : [ "Waste", "Waste", 0 ],
 			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
 			"obj-89" : [ "Weather Wind", "Wind", 0 ],
 			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
-			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ]
+			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
+			"obj-60" : [ "Recycled", "Recycled", 0 ],
+			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
+			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-59" : [ "Waste", "Waste", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
