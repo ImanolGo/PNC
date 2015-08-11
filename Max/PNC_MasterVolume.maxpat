@@ -38,11 +38,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 127.666626, 529.0, 42.0, 22.0 ],
+					"style" : "",
+					"text" : "* 0.85"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 127.666626, 587.0, 89.0, 22.0 ],
+					"patching_rect" : [ 127.666626, 646.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "s sendLiveOsc"
 				}
@@ -57,7 +70,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.666626, 528.0, 141.0, 23.0 ],
+					"patching_rect" : [ 127.666626, 587.0, 141.0, 23.0 ],
 					"style" : "",
 					"text" : "/live/master/volume $1"
 				}
@@ -77,7 +90,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u305001223"
+					"varname" : "u483000442"
 				}
 
 			}
@@ -143,9 +156,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 68.166626, 355.0, 34.0, 22.0 ],
+					"patching_rect" : [ 68.166626, 355.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "0.85"
+					"text" : "1."
 				}
 
 			}
@@ -194,9 +207,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.0, 246.0, 34.0, 22.0 ],
+					"patching_rect" : [ 227.0, 246.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "0.85"
+					"text" : "1."
 				}
 
 			}
@@ -435,6 +448,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -445,7 +467,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]

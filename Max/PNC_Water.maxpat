@@ -39,6 +39,83 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1109.0, 219.0, 53.0, 22.0 ],
+					"style" : "",
+					"text" : "r watVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 927.0, 228.703613, 53.0, 22.0 ],
+					"style" : "",
+					"text" : "r watVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 725.0, 219.0, 53.0, 22.0 ],
+					"style" : "",
+					"text" : "r watVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 145.666626, 253.0, 53.0, 22.0 ],
+					"style" : "",
+					"text" : "r watVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 50.666626, 310.0, 42.0, 22.0 ],
+					"style" : "",
+					"text" : "* 0.85"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.666626, 347.0, 55.0, 22.0 ],
+					"style" : "",
+					"text" : "s watVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 1,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -51,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 50.666626, 302.703552, 170.0, 55.0 ],
+					"patching_rect" : [ 145.666626, 287.703552, 170.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 31.666626, 153.0, 171.0, 55.0 ],
 					"varname" : "PNC_MidiCC[6]",
@@ -314,7 +391,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 50.666626, 367.203552, 179.0, 46.0 ],
+					"patching_rect" : [ 145.666626, 352.203552, 179.0, 46.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 31.666626, 222.203491, 177.0, 53.0 ],
 					"style" : "",
@@ -329,11 +406,10 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-6",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.666626, 208.0, 101.0, 33.0 ],
+					"patching_rect" : [ 50.666626, 208.0, 140.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 35.166626, 35.5, 121.0, 20.0 ],
 					"style" : "",
@@ -362,7 +438,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u996000797"
+					"varname" : "u263006739"
 				}
 
 			}
@@ -1538,6 +1614,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 119.5, 327.0, 53.0, 22.0 ],
+									"style" : "",
+									"text" : "r watVol"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -1734,6 +1823,15 @@
 									"hidden" : 0,
 									"midpoints" : [ 53.5, 292.0, 106.0, 292.0 ],
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-53", 0 ]
 								}
 
 							}
@@ -2483,7 +2581,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
+					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -2610,6 +2708,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2623,6 +2730,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -2655,6 +2771,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2680,6 +2805,24 @@
 					"hidden" : 0,
 					"midpoints" : [ 836.0, 134.148315, 1020.0, 134.148315 ],
 					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-53", 0 ]
 				}
 
 			}
@@ -2757,53 +2900,53 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-22::obj-11" : [ "Time[3]", "Time", 0 ],
-			"obj-68::obj-49" : [ "Max Threshold[1]", "ThrMax", 0 ],
-			"obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
-			"obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ],
-			"obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
-			"obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ],
-			"obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
-			"obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-4::obj-11" : [ "Time", "Time", 0 ],
-			"obj-38::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
-			"obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
-			"obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
-			"obj-67::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
-			"obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
-			"obj-52::obj-67" : [ "TargetMin[6]", "Min", 0 ],
-			"obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
+			"obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
 			"obj-52::obj-70" : [ "TargetMax[6]", "Min", 0 ],
+			"obj-68::obj-49" : [ "Max Threshold[1]", "ThrMax", 0 ],
 			"obj-52::obj-36" : [ "Control Number[6]", "CC", 0 ],
 			"obj-68::obj-3" : [ "Threshold Min[3]", "ThrMin", 0 ],
-			"obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
-			"obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
-			"obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
-			"obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-11::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-52::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ],
-			"obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-2" : [ "Volume Water", "Volume", 0 ],
-			"obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
 			"obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
-			"obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
-			"obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
-			"obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-19::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-52::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ],
+			"obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
+			"obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-2" : [ "Volume Water", "Volume", 0 ],
+			"obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
+			"obj-11::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
+			"obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-67::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
+			"obj-52::obj-67" : [ "TargetMin[6]", "Min", 0 ],
+			"obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
 			"obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
-			"obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
 			"obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
+			"obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
 			"obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ]
+			"obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
+			"obj-4::obj-11" : [ "Time", "Time", 0 ],
+			"obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
+			"obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
+			"obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
+			"obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ],
+			"obj-19::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-38::obj-70" : [ "TargetMax[2]", "Min", 0 ],
+			"obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
+			"obj-22::obj-11" : [ "Time[3]", "Time", 0 ],
+			"obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
+			"obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
