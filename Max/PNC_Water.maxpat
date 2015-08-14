@@ -96,9 +96,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 50.666626, 310.0, 42.0, 22.0 ],
+					"patching_rect" : [ 50.666626, 310.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "* 0.85"
+					"text" : "* 1."
 				}
 
 			}
@@ -143,9 +143,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1010.5, 263.203552, 42.0, 22.0 ],
+					"patching_rect" : [ 1010.5, 263.203552, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "* 0.85"
+					"text" : "* 1."
 				}
 
 			}
@@ -156,9 +156,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 625.166626, 263.203552, 42.0, 22.0 ],
+					"patching_rect" : [ 625.166626, 263.203552, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "* 0.85"
+					"text" : "* 1."
 				}
 
 			}
@@ -169,9 +169,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 826.5, 270.203552, 42.0, 22.0 ],
+					"patching_rect" : [ 826.5, 270.203552, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "* 0.85"
+					"text" : "* 1."
 				}
 
 			}
@@ -438,7 +438,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u263006739"
+					"varname" : "u342000273"
 				}
 
 			}
@@ -1632,9 +1632,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 96.5, 365.0, 42.0, 22.0 ],
+									"patching_rect" : [ 96.5, 365.0, 29.5, 22.0 ],
 									"style" : "",
-									"text" : "* 0.85"
+									"text" : "* 1."
 								}
 
 							}
@@ -2900,53 +2900,53 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-52::obj-70" : [ "TargetMax[6]", "Min", 0 ],
-			"obj-68::obj-49" : [ "Max Threshold[1]", "ThrMax", 0 ],
+			"obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ],
 			"obj-52::obj-36" : [ "Control Number[6]", "CC", 0 ],
-			"obj-68::obj-3" : [ "Threshold Min[3]", "ThrMin", 0 ],
-			"obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
-			"obj-52::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ],
-			"obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
-			"obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
-			"obj-2" : [ "Volume Water", "Volume", 0 ],
-			"obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
-			"obj-11::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
-			"obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-67::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
-			"obj-52::obj-67" : [ "TargetMin[6]", "Min", 0 ],
-			"obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
-			"obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
-			"obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
-			"obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
-			"obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
-			"obj-4::obj-11" : [ "Time", "Time", 0 ],
-			"obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
-			"obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
-			"obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
-			"obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
-			"obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
-			"obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ],
 			"obj-19::obj-67" : [ "TargetMin[3]", "Min", 0 ],
-			"obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-56::obj-70" : [ "TargetMax[4]", "Min", 0 ],
+			"obj-2" : [ "Volume Water", "Volume", 0 ],
+			"obj-4::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-58::obj-11" : [ "Time[4]", "Time", 0 ],
+			"obj-11::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-11::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-15::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-63::obj-70" : [ "TargetMax[5]", "Min", 0 ],
+			"obj-72::obj-49" : [ "Max Threshold[2]", "ThrMax", 0 ],
+			"obj-46::obj-10" : [ "Delay (ms)[2]", "Delay", 0 ],
+			"obj-72::obj-3" : [ "Threshold Min[4]", "ThrMin", 0 ],
+			"obj-46::obj-11" : [ "Time[2]", "Time", 0 ],
+			"obj-19::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-38::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-11::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-19::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-63::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-38::obj-67" : [ "TargetMin[2]", "Min", 0 ],
 			"obj-38::obj-70" : [ "TargetMax[2]", "Min", 0 ],
 			"obj-65::obj-10" : [ "Delay (ms)[5]", "Delay", 0 ],
-			"obj-22::obj-11" : [ "Time[3]", "Time", 0 ],
+			"obj-52::obj-70" : [ "TargetMax[6]", "Min", 0 ],
+			"obj-11::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-19::obj-70" : [ "TargetMax[3]", "Min", 0 ],
+			"obj-56::obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-52::obj-67" : [ "TargetMin[6]", "Min", 0 ],
+			"obj-4::obj-11" : [ "Time", "Time", 0 ],
+			"obj-68::obj-49" : [ "Max Threshold[1]", "ThrMax", 0 ],
+			"obj-18::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-68::obj-3" : [ "Threshold Min[3]", "ThrMin", 0 ],
+			"obj-18::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-56::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-63::obj-36" : [ "Control Number[5]", "CC", 0 ],
+			"obj-67::obj-3" : [ "Threshold Min[2]", "ThrMin", 0 ],
+			"obj-38::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-56::obj-67" : [ "TargetMin[4]", "Min", 0 ],
+			"obj-67::obj-49" : [ "Max Threshold", "ThrMax", 0 ],
+			"obj-15::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-15::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-65::obj-11" : [ "Time[5]", "Time", 0 ],
+			"obj-15::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-52::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ],
 			"obj-22::obj-10" : [ "Delay (ms)[3]", "Delay", 0 ],
-			"obj-63::obj-67" : [ "TargetMin[5]", "Min", 0 ]
+			"obj-58::obj-10" : [ "Delay (ms)[4]", "Delay", 0 ],
+			"obj-22::obj-11" : [ "Time[3]", "Time", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

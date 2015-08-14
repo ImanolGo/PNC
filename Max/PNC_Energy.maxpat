@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1423.0, 918.0 ],
+		"rect" : [ 34.0, 79.0, 1253.0, 918.0 ],
 		"bgcolor" : [ 0.949319, 0.87446, 0.471249, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,12 +41,97 @@
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 260.25, 854.203491, 42.0, 22.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 563.25, 880.703491, 77.0, 22.0 ],
 					"style" : "",
-					"text" : "* 0.85"
+					"text" : "s engVolInfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-177",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 551.5, 769.5, 208.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 568.5, 527.296265, 194.0, 20.0 ],
+					"style" : "",
+					"text" : "ENERGY INFOBELLS VOLUME"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bangmode" : 1,
+					"bgcolor" : [ 0.407843, 0.407843, 0.407843, 1.0 ],
+					"bordercolor" : [ 0.258824, 0.258824, 0.258824, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-176",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"outputmode" : 1,
+					"parameter_enable" : 0,
+					"patching_rect" : [ 563.25, 943.898315, 179.0, 46.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 572.0, 631.0, 177.0, 53.0 ],
+					"style" : "",
+					"tabmode" : 0,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 0,
+					"varname" : "TextEdit[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-173",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 563.25, 802.703613, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 575.0, 562.296387, 44.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Volume Air[1]",
+							"parameter_shortname" : "Volume",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 4,
+							"parameter_modmax" : 1.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialVolumeEnergy2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"id" : "obj-174",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 563.25, 800.453613, 44.0, 49.25 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 575.0, 554.296387, 50.0, 63.0 ],
+					"proportion" : 0.39,
+					"style" : ""
 				}
 
 			}
@@ -66,7 +151,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 260.25, 887.703491, 179.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.5, 508.999908, 179.0, 61.0 ],
+					"presentation_rect" : [ 358.75, 551.999878, 179.0, 61.0 ],
 					"varname" : "PNC_MidiCC_Energy[1]",
 					"viewvisibility" : 1
 				}
@@ -79,7 +164,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.25, 783.5, 90.0, 22.0 ],
+					"patching_rect" : [ 260.25, 786.5, 90.0, 22.0 ],
 					"style" : "",
 					"text" : "r triggerEngVol"
 				}
@@ -248,7 +333,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 889.916626, 798.0, 87.0, 22.0 ],
+					"patching_rect" : [ 1129.916626, 796.0, 87.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -269,7 +354,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 889.916626, 840.203491, 110.0, 20.0 ],
+					"patching_rect" : [ 1129.916626, 838.203491, 110.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 732.0, 321.999939, 110.0, 20.0 ],
 					"style" : "",
@@ -284,7 +369,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 688.25, 835.203491, 41.0, 22.0 ],
+					"patching_rect" : [ 928.25, 833.203491, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "/ 127."
 				}
@@ -297,7 +382,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 688.25, 796.203491, 93.0, 22.0 ],
+					"patching_rect" : [ 928.25, 794.203491, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "r midi_avg_eng"
 				}
@@ -317,7 +402,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 688.25, 882.703491, 179.0, 61.0 ],
+					"patching_rect" : [ 928.25, 880.703491, 179.0, 61.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 732.0, 222.999908, 179.0, 61.0 ],
 					"varname" : "PNC_MidiCC_Energy[2]",
@@ -333,9 +418,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 260.25, 798.0, 44.0, 47.0 ],
+					"patching_rect" : [ 260.25, 820.703491, 44.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.5, 442.796509, 44.0, 47.0 ],
+					"presentation_rect" : [ 360.75, 485.796509, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Volume Energy",
@@ -362,23 +447,11 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.25, 795.75, 44.0, 49.25 ],
+					"patching_rect" : [ 260.25, 815.999878, 44.0, 49.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.5, 434.296509, 50.0, 63.0 ],
+					"presentation_rect" : [ 358.75, 477.296509, 50.0, 63.0 ],
 					"proportion" : 0.39,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 336.25, 860.0, 57.0, 22.0 ],
-					"style" : "",
-					"text" : "s engVol"
 				}
 
 			}
@@ -399,7 +472,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 260.25, 961.203491, 179.0, 46.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.5, 588.0, 177.0, 53.0 ],
+					"presentation_rect" : [ 358.75, 631.0, 177.0, 53.0 ],
 					"style" : "",
 					"tabmode" : 0,
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -417,7 +490,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.25, 756.75, 124.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.0, 407.296387, 142.0, 20.0 ],
+					"presentation_rect" : [ 352.25, 450.296387, 142.0, 20.0 ],
 					"style" : "",
 					"text" : "ENERGY VOLUME"
 				}
@@ -5203,7 +5276,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 889.916626, 879.203491, 179.0, 61.0 ],
+					"patching_rect" : [ 1129.916626, 877.203491, 179.0, 61.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 732.0, 347.999939, 179.0, 61.0 ],
 					"varname" : "PNC_MidiCC_Energy",
@@ -5221,6 +5294,8 @@
 					"patching_rect" : [ 30.25, 8.5, 58.0, 22.0 ],
 					"restore" : 					{
 						"TextEditEng" : [ "<empty>" ],
+						"TextEdit[1]" : [ "<empty>" ],
+						"live.dialVolumeEnergy2" : [ 0.0 ],
 						"live.dialVolumeEng" : [ 0.607087 ],
 						"live.numbox[1]_air" : [ 24.0 ],
 						"live.numbox[2]_air" : [ 7.0 ],
@@ -5230,7 +5305,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u805008505"
+					"varname" : "u565013004"
 				}
 
 			}
@@ -5269,7 +5344,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 688.25, 772.407104, 110.0, 20.0 ],
+					"patching_rect" : [ 928.25, 770.407104, 110.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 732.0, 200.0, 110.0, 20.0 ],
 					"style" : "",
@@ -8304,9 +8379,9 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 231.0, 741.203491, 273.0, 275.546509 ],
+					"patching_rect" : [ 231.0, 740.203491, 576.0, 276.546509 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.25, 395.999847, 300.0, 278.0 ],
+					"presentation_rect" : [ 323.5, 438.999847, 458.0, 278.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -8569,6 +8644,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-173", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8644,16 +8728,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
@@ -8666,15 +8741,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -8924,23 +8990,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-3" : [ "Volume Energy", "Volume", 0 ],
+			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-21::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-16::obj-36" : [ "Control Number[2]", "CC", 0 ],
 			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
 			"obj-16::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-21::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
-			"obj-21::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-16::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-16::obj-70" : [ "TargetMax[2]", "Min", 0 ],
 			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-21::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-21::obj-67" : [ "TargetMin[1]", "Min", 0 ],
 			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-3" : [ "Volume Energy", "Volume", 0 ],
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
 			"obj-16::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-16::obj-70" : [ "TargetMax[2]", "Min", 0 ]
+			"obj-21::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-21::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-21::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-173" : [ "Volume Air[1]", "Volume", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
