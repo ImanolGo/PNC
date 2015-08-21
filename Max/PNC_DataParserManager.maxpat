@@ -38,6 +38,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 55.0, 306.0, 102.0, 22.0 ],
+					"style" : "",
+					"text" : "s sendtTempSize"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-12",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 340.0, 555.0, 87.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 340.0, 515.0, 111.0, 22.0 ],
+					"style" : "",
+					"text" : "r sendtTempResult"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -59,9 +98,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 111.0, 301.0, 117.0, 22.0 ],
+					"patching_rect" : [ 249.0, 306.0, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "s sendtTemperature"
+					"text" : "s sendtTempResult"
 				}
 
 			}
@@ -169,9 +208,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 249.0, 140.0, 102.0, 22.0 ],
+					"patching_rect" : [ 249.0, 140.0, 98.0, 22.0 ],
 					"style" : "",
-					"text" : "r getTemperature"
+					"text" : "r getTempResult"
 				}
 
 			}
@@ -187,9 +226,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "PNC_DataParser.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 55.0, 176.0, 213.0, 100.0 ],
 					"viewvisibility" : 1
 				}
@@ -218,20 +257,6 @@
 					"patching_rect" : [ 569.0, 444.0, 138.0, 22.0 ],
 					"style" : "",
 					"text" : "latestPopperFrame.json"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-121",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 55.0, 301.0, 50.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -287,7 +312,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-121", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -299,7 +324,16 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -323,9 +357,12 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-10" : [ "Bay[1]", "Bay", 0 ],
+			"obj-6::obj-3" : [ "Frame[1]", "Frame", 0 ],
 			"obj-3" : [ "Frame", "Frame", 0 ],
-			"obj-9" : [ "Floor[1]", "Floor", 0 ],
-			"obj-10" : [ "Bay[1]", "Bay", 0 ]
+			"obj-6::obj-10" : [ "Bay[2]", "Bay", 0 ],
+			"obj-6::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-9" : [ "Floor[1]", "Floor", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
