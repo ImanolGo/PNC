@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 385.0, 79.0, 981.0, 856.0 ],
+		"rect" : [ 89.0, 80.0, 1310.0, 1040.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 799.5, 109.5, 60.0, 22.0 ],
+					"patching_rect" : [ 878.5, 104.5, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "pak 0 0 0"
 				}
@@ -57,7 +57,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 739.5, 31.5, 44.0, 47.0 ],
+					"patching_rect" : [ 818.5, 26.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Frame",
@@ -81,7 +81,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 831.5, 31.5, 44.0, 47.0 ],
+					"patching_rect" : [ 910.5, 26.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Bay[1]",
@@ -105,7 +105,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 785.5, 31.5, 44.0, 47.0 ],
+					"patching_rect" : [ 864.5, 26.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Floor[1]",
@@ -1009,7 +1009,7 @@
 					"destination" : [ "obj-98", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 841.0, 96.0, 850.0, 96.0 ],
+					"midpoints" : [ 920.0, 91.0, 929.0, 91.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -1079,7 +1079,7 @@
 					"destination" : [ "obj-98", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 749.0, 96.0, 809.0, 96.0 ],
+					"midpoints" : [ 828.0, 91.0, 888.0, 91.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -1339,7 +1339,7 @@
 					"destination" : [ "obj-98", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 795.0, 96.0, 829.5, 96.0 ],
+					"midpoints" : [ 874.0, 91.0, 908.5, 91.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1419,7 +1419,7 @@
 					"destination" : [ "obj-92", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 809.0, 132.0, 612.0, 132.0, 612.0, 111.0, 467.5, 111.0 ],
+					"midpoints" : [ 888.0, 132.0, 612.0, 132.0, 612.0, 111.0, 467.5, 111.0 ],
 					"source" : [ "obj-98", 0 ]
 				}
 
