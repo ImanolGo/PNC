@@ -866,6 +866,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -1125,7 +1126,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u829007971"
+					"varname" : "u054010439"
 				}
 
 			}
@@ -1159,11 +1160,11 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
 			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
 			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
-			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ]
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

@@ -1426,8 +1426,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10" : [ "Bay[1]", "Bay", 0 ],
 			"obj-3" : [ "Frame", "Frame", 0 ],
+			"obj-10" : [ "Bay[1]", "Bay", 0 ],
 			"obj-9" : [ "Floor[1]", "Floor", 0 ]
 		}
 ,
