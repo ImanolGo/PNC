@@ -143,6 +143,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -919,7 +920,7 @@
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 244.5, 618.5, 411.375, 618.5 ],
+					"midpoints" : [ 244.5, 627.5, 411.375, 627.5 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -929,7 +930,7 @@
 					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 244.5, 618.5, 190.75, 618.5 ],
+					"midpoints" : [ 244.5, 641.5, 190.75, 641.5 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -1058,7 +1059,7 @@
 					"destination" : [ "obj-44", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 185.0, 660.0, 411.375, 660.0 ],
+					"midpoints" : [ 185.0, 654.0, 411.375, 654.0 ],
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -1262,9 +1263,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
