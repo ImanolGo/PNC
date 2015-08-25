@@ -38,26 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-4",
+					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 127.666626, 529.0, 42.0, 22.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 127.666626, 534.0, 73.0, 22.0 ],
 					"style" : "",
-					"text" : "* 0.85"
+					"text" : "s masterVol"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-38",
+					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 127.666626, 646.0, 89.0, 22.0 ],
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 322.5, 500.0, 42.0, 22.0 ],
 					"style" : "",
-					"text" : "s sendLiveOsc"
+					"text" : "* 0.85"
 				}
 
 			}
@@ -70,9 +70,21 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.666626, 587.0, 141.0, 23.0 ],
+					"patching_rect" : [ 322.5, 558.0, 141.0, 23.0 ],
 					"style" : "",
 					"text" : "/live/master/volume $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 322.5, 615.0, 89.0, 22.0 ],
+					"style" : "",
+					"text" : "s sendLiveOsc"
 				}
 
 			}
@@ -85,12 +97,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 364.0, 320.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dialMasterVolume" : [ 0.85 ]
+						"live.dialMasterVolume" : [ 1.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u483000442"
+					"varname" : "u941005437"
 				}
 
 			}
@@ -467,7 +479,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]

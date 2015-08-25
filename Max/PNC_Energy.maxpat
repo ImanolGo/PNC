@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1253.0, 918.0 ],
+		"rect" : [ 34.0, 79.0, 1310.0, 1083.0 ],
 		"bgcolor" : [ 0.949319, 0.87446, 0.471249, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,11 +39,50 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 260.25, 877.203491, 90.0, 22.0 ],
+					"style" : "",
+					"text" : "pak 1. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 260.25, 907.203491, 54.5, 22.0 ],
+					"style" : "",
+					"text" : "* 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 331.25, 845.703491, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "r masterVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 563.25, 880.703491, 77.0, 22.0 ],
+					"patching_rect" : [ 563.25, 963.398315, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "s engVolInfo"
 				}
@@ -79,7 +118,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 563.25, 943.898315, 179.0, 46.0 ],
+					"patching_rect" : [ 563.25, 1010.898315, 179.0, 46.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 572.0, 631.0, 177.0, 53.0 ],
 					"style" : "",
@@ -149,7 +188,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 260.25, 887.703491, 179.0, 61.0 ],
+					"patching_rect" : [ 260.25, 943.898315, 179.0, 61.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 358.75, 551.999878, 179.0, 61.0 ],
 					"varname" : "PNC_MidiCC_Energy[1]",
@@ -470,7 +509,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 260.25, 961.203491, 179.0, 46.0 ],
+					"patching_rect" : [ 260.25, 1017.398315, 179.0, 46.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 358.75, 631.0, 177.0, 53.0 ],
 					"style" : "",
@@ -5295,7 +5334,7 @@
 					"restore" : 					{
 						"TextEditEng" : [ "<empty>" ],
 						"TextEdit[1]" : [ "<empty>" ],
-						"live.dialVolumeEnergy2" : [ 0.0 ],
+						"live.dialVolumeEnergy2" : [ 0.643307 ],
 						"live.dialVolumeEng" : [ 0.607087 ],
 						"live.numbox[1]_air" : [ 24.0 ],
 						"live.numbox[2]_air" : [ 7.0 ],
@@ -5305,7 +5344,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u565013004"
+					"varname" : "u410009353"
 				}
 
 			}
@@ -8379,7 +8418,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 231.0, 740.203491, 576.0, 276.546509 ],
+					"patching_rect" : [ 231.0, 740.203491, 577.0, 339.546509 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 323.5, 438.999847, 458.0, 278.0 ],
 					"proportion" : 0.39,
@@ -8728,7 +8767,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-62", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
@@ -8746,11 +8785,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 45.75, 567.0, 45.75, 567.0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
@@ -8825,6 +8882,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 219.166626, 278.0, 218.0, 278.0, 218.0, 332.0, 217.166667, 332.0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-62", 0 ]
 				}
 
 			}
@@ -8990,24 +9056,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-21::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-16::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-16::obj-67" : [ "TargetMin[2]", "Min", 0 ],
 			"obj-16::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-3" : [ "Volume Energy", "Volume", 0 ],
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
-			"obj-16::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-21::obj-36" : [ "Control Number[1]", "CC", 0 ],
 			"obj-21::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-3" : [ "Volume Energy", "Volume", 0 ],
+			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-16::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
+			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
+			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-16::obj-36" : [ "Control Number[2]", "CC", 0 ],
 			"obj-21::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-173" : [ "Volume Air[1]", "Volume", 0 ]
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-16::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-21::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-21::obj-36" : [ "Control Number[1]", "CC", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

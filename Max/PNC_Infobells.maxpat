@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 912.0, 79.0, 1331.0, 933.0 ],
+		"rect" : [ 555.0, 79.0, 1331.0, 933.0 ],
 		"bgcolor" : [ 0.945969, 0.765681, 0.279005, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-186",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 46.0, 249.0, 46.5, 22.0 ],
+					"style" : "",
+					"text" : "* 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 46.0, 205.0, 79.0, 22.0 ],
+					"style" : "",
+					"text" : "pak 1. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 106.0, 158.601685, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "r masterVol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 1,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -51,7 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 46.0, 216.898315, 179.0, 61.0 ],
+					"patching_rect" : [ 46.0, 284.898315, 179.0, 61.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 59.849998, 123.796326, 179.0, 55.0 ],
 					"varname" : "PNC_MidiCC_Air[3]",
@@ -500,7 +539,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 46.0, 357.0, 58.0, 22.0 ],
+					"patching_rect" : [ 46.0, 425.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"TextEditInfobells" : [ "<empty>" ],
 						"live.dialVolumeInfoBells" : [ 0.629921 ]
@@ -508,7 +547,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u712005964"
+					"varname" : "u471008791"
 				}
 
 			}
@@ -527,7 +566,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 46.0, 300.0, 179.0, 46.0 ],
+					"patching_rect" : [ 46.0, 368.0, 179.0, 46.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 59.849998, 190.999969, 177.0, 53.0 ],
 					"style" : "",
@@ -896,6 +935,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -959,6 +1007,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -968,7 +1025,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-101", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-225", 0 ]
@@ -1040,6 +1097,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-225", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1049,38 +1115,38 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-225" : [ "Volume Infobells", "Volume", 0 ],
-			"obj-16::obj-36" : [ "Note Out Midi Channel[7]", "Channel", 0 ],
-			"obj-32::obj-50" : [ "live.numbox[11]", "live.numbox", 0 ],
-			"obj-29::obj-36" : [ "Note Out Midi Channel[12]", "Channel", 0 ],
-			"obj-29::obj-50" : [ "live.numbox[12]", "live.numbox", 0 ],
-			"obj-21::obj-36" : [ "Note Out Midi Channel[4]", "Channel", 0 ],
-			"obj-33::obj-50" : [ "live.numbox[10]", "live.numbox", 0 ],
-			"obj-33::obj-36" : [ "Note Out Midi Channel[10]", "Channel", 0 ],
-			"obj-17::obj-36" : [ "Note Out Midi Channel[6]", "Channel", 0 ],
-			"obj-41::obj-36" : [ "Note Out Midi Channel[9]", "Channel", 0 ],
-			"obj-4::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-4::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-83::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-42::obj-50" : [ "live.numbox[8]", "live.numbox", 0 ],
-			"obj-3::obj-36" : [ "Note Out Midi Channel", "Channel", 0 ],
-			"obj-174::obj-36" : [ "Note Out Midi Channel[2]", "Channel", 0 ],
-			"obj-16::obj-50" : [ "live.numbox[7]", "live.numbox", 0 ],
-			"obj-4::obj-50" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-173::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-3::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-20::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-20::obj-36" : [ "Note Out Midi Channel[5]", "Channel", 0 ],
-			"obj-42::obj-36" : [ "Note Out Midi Channel[8]", "Channel", 0 ],
-			"obj-4::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-28::obj-36" : [ "Note Out Midi Channel[13]", "Channel", 0 ],
-			"obj-83::obj-36" : [ "Note Out Midi Channel[1]", "Channel", 0 ],
-			"obj-32::obj-36" : [ "Note Out Midi Channel[11]", "Channel", 0 ],
-			"obj-41::obj-50" : [ "live.numbox[9]", "live.numbox", 0 ],
 			"obj-21::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-174::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-28::obj-50" : [ "live.numbox[13]", "live.numbox", 0 ],
+			"obj-83::obj-36" : [ "Note Out Midi Channel[1]", "Channel", 0 ],
+			"obj-4::obj-50" : [ "live.numbox[14]", "live.numbox", 0 ],
+			"obj-20::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-42::obj-36" : [ "Note Out Midi Channel[8]", "Channel", 0 ],
+			"obj-3::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
 			"obj-173::obj-36" : [ "Note Out Midi Channel[3]", "Channel", 0 ],
+			"obj-33::obj-36" : [ "Note Out Midi Channel[10]", "Channel", 0 ],
+			"obj-29::obj-36" : [ "Note Out Midi Channel[12]", "Channel", 0 ],
+			"obj-174::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-32::obj-36" : [ "Note Out Midi Channel[11]", "Channel", 0 ],
+			"obj-173::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-16::obj-36" : [ "Note Out Midi Channel[7]", "Channel", 0 ],
+			"obj-33::obj-50" : [ "live.numbox[10]", "live.numbox", 0 ],
+			"obj-4::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-20::obj-36" : [ "Note Out Midi Channel[5]", "Channel", 0 ],
+			"obj-32::obj-50" : [ "live.numbox[11]", "live.numbox", 0 ],
+			"obj-29::obj-50" : [ "live.numbox[12]", "live.numbox", 0 ],
+			"obj-16::obj-50" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-174::obj-36" : [ "Note Out Midi Channel[2]", "Channel", 0 ],
+			"obj-41::obj-50" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"obj-42::obj-50" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-41::obj-36" : [ "Note Out Midi Channel[9]", "Channel", 0 ],
+			"obj-28::obj-50" : [ "live.numbox[13]", "live.numbox", 0 ],
+			"obj-4::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-83::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-17::obj-36" : [ "Note Out Midi Channel[6]", "Channel", 0 ],
+			"obj-225" : [ "Volume Infobells", "Volume", 0 ],
+			"obj-3::obj-36" : [ "Note Out Midi Channel", "Channel", 0 ],
+			"obj-28::obj-36" : [ "Note Out Midi Channel[13]", "Channel", 0 ],
+			"obj-4::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-21::obj-36" : [ "Note Out Midi Channel[4]", "Channel", 0 ],
 			"obj-17::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ]
 		}
 ,
