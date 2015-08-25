@@ -39,6 +39,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-58",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 683.0, 437.0, 100.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 609.166626, 407.0, 151.0, 22.0 ],
+					"style" : "",
+					"text" : "PNC_DataParserManager"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 256.75, 196.0, 107.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 609.166626, 366.75, 153.0, 20.0 ],
+					"style" : "",
+					"text" : "Data Parser Manager"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-99",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1704,7 +1735,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u309014346"
+					"varname" : "u324000360"
 				}
 
 			}
@@ -1802,7 +1833,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/weather_temperature 41.811024"
+					"text" : "/start CHI01"
 				}
 
 			}
@@ -1870,7 +1901,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 723.166626, 133.25, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "WEA-SUN",
+					"text" : "CHI01",
 					"textjustification" : 1
 				}
 
@@ -2327,6 +2358,23 @@
 					"patching_rect" : [ 304.333374, 17.0, 277.5, 108.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 589.375, 102.0, 316.625, 76.5 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"id" : "obj-17",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 40.5, 50.0, 258.5, 83.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 589.375, 353.5, 364.625, 155.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -3215,18 +3263,36 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-58::obj-87::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-58::obj-104::obj-3" : [ "Frame[1]", "Frame", 0 ],
 			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
+			"obj-58::obj-104::obj-10" : [ "Bay[2]", "Bay", 0 ],
+			"obj-58::obj-6::obj-10" : [ "Bay[7]", "Bay", 0 ],
+			"obj-58::obj-104::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-58::obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-58::obj-6::obj-9" : [ "Floor[7]", "Floor", 0 ],
+			"obj-58::obj-87::obj-3" : [ "Frame[3]", "Frame", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
-			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
-			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
-			"obj-89" : [ "Weather Wind", "Wind", 0 ],
-			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
-			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
-			"obj-59" : [ "Waste", "Waste", 0 ],
-			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
-			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
 			"obj-60" : [ "Recycled", "Recycled", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ]
+			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
+			"obj-58::obj-99::obj-3" : [ "Frame", "Frame", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
+			"obj-58::obj-99::obj-10" : [ "Bay[1]", "Bay", 0 ],
+			"obj-58::obj-99::obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-58::obj-6::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-58::obj-10" : [ "Bay[6]", "Bay", 0 ],
+			"obj-58::obj-87::obj-9" : [ "Floor[4]", "Floor", 0 ],
+			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
+			"obj-58::obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
+			"obj-58::obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
+			"obj-89" : [ "Weather Wind", "Wind", 0 ],
+			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
+			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
+			"obj-58::obj-3" : [ "Frame[5]", "Frame", 0 ],
+			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
+			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
+			"obj-59" : [ "Waste", "Waste", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -3266,6 +3332,20 @@
 			}
 , 			{
 				"name" : "PNC_LiveOsc.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_DataParserManager.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_DataParser.maxpat",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
