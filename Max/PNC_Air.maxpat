@@ -1960,7 +1960,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1090.0, 782.5, 83.0, 22.0 ],
+					"patching_rect" : [ 1299.25, 783.5, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "r triggerAirVol"
 				}
@@ -8565,7 +8565,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u679011559"
+					"varname" : "u123013352"
 				}
 
 			}
@@ -12567,7 +12567,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-75", 0 ],
+					"destination" : [ "obj-174", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-169", 0 ]
@@ -13283,8 +13283,8 @@
 			"obj-249::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
 			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
 			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
-			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-235::obj-70" : [ "TargetMax[1]", "Min", 0 ],
 			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
 			"obj-3" : [ "Volume Air", "Volume", 0 ],

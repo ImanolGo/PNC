@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 343.0, 79.0, 1340.0, 1076.0 ],
+		"rect" : [ 19.0, 119.0, 1340.0, 1076.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1353,8 +1353,8 @@
 					"presentation_rect" : [ 454.0, 159.75, 51.0, 51.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Recycled Compost",
-							"parameter_shortname" : "Compost",
+							"parameter_longname" : "live.dial[2]",
+							"parameter_shortname" : "Volume",
 							"parameter_type" : 0,
 							"parameter_mmax" : 1.0,
 							"parameter_unitstyle" : 1
@@ -1734,7 +1734,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u762005231"
+					"varname" : "u136012095"
 				}
 
 			}
@@ -1832,7 +1832,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/sunlight_artificial 0.450394"
+					"text" : "/start CHI01"
 				}
 
 			}
@@ -3262,36 +3262,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-89" : [ "Weather Wind", "Wind", 0 ],
-			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
-			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
-			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
-			"obj-58::obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
-			"obj-58::obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
-			"obj-58::obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
-			"obj-58::obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
-			"obj-58::obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
-			"obj-58::obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
-			"obj-58::obj-3" : [ "Frame[5]", "Frame", 0 ],
-			"obj-58::obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
-			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
-			"obj-60" : [ "Recycled", "Recycled", 0 ],
 			"obj-58::obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
-			"obj-58::obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-60" : [ "Recycled", "Recycled", 0 ],
+			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
+			"obj-58::obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
+			"obj-58::obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
 			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-58::obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
-			"obj-58::obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
-			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-58::obj-6::obj-3" : [ "Frame", "Frame", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-73" : [ "Recycled Compost", "Compost", 0 ],
-			"obj-58::obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
-			"obj-59" : [ "Waste", "Waste", 0 ],
+			"obj-58::obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
 			"obj-58::obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
-			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
+			"obj-58::obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-58::obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
+			"obj-59" : [ "Waste", "Waste", 0 ],
 			"obj-58::obj-10" : [ "Bay[6]", "Bay", 0 ],
+			"obj-58::obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
-			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ]
+			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-58::obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
+			"obj-89" : [ "Weather Wind", "Wind", 0 ],
+			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
+			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
+			"obj-73" : [ "live.dial[2]", "Volume", 0 ],
+			"obj-26::obj-73" : [ "live.dial[1]", "Volume", 0 ],
+			"obj-58::obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
+			"obj-58::obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-58::obj-3" : [ "Frame[5]", "Frame", 0 ],
+			"obj-58::obj-6::obj-3" : [ "Frame", "Frame", 0 ],
+			"obj-58::obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
+			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
