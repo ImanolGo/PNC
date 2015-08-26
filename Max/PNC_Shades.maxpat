@@ -5897,7 +5897,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u436001114"
+					"varname" : "u033000990"
 				}
 
 			}
@@ -12206,25 +12206,25 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3" : [ "Volume Shades", "Volume", 0 ],
-			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
-			"obj-110::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-64::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-89" : [ "Shades Volume", "Volume", 0 ],
-			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
-			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
 			"obj-64::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-110::obj-70" : [ "TargetMax[1]", "Min", 0 ],
 			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-64::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-110::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-64::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
 			"obj-110::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
 			"obj-64::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-110::obj-36" : [ "Control Number[1]", "CC", 0 ]
+			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
+			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
+			"obj-3" : [ "Volume Shades", "Volume", 0 ],
+			"obj-110::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-110::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
+			"obj-89" : [ "Shades Volume", "Volume", 0 ],
+			"obj-64::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

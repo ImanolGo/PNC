@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 363.0, 166.0, 1133.0, 966.0 ],
+		"rect" : [ 363.0, 166.0, 1036.0, 966.0 ],
 		"bgcolor" : [ 0.559814, 0.68331, 0.811467, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,117 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 351.333344, 139.796509, 90.0, 22.0 ],
+					"style" : "",
+					"text" : "r triggerVolSha"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 351.333344, 178.796509, 44.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 266.0, 108.896362, 44.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "Volume Time",
+							"parameter_shortname" : "Volume",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 4,
+							"parameter_modmax" : 1.0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dialVolumeTime"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"id" : "obj-75",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.333344, 176.546509, 44.0, 49.25 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 263.0, 100.400635, 50.0, 63.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.333344, 238.296509, 79.0, 22.0 ],
+					"style" : "",
+					"text" : "s timeVolInfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bangmode" : 1,
+					"bgcolor" : [ 0.407843, 0.407843, 0.407843, 1.0 ],
+					"bordercolor" : [ 0.258824, 0.258824, 0.258824, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-83",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"outputmode" : 1,
+					"parameter_enable" : 0,
+					"patching_rect" : [ 351.333344, 271.0, 179.0, 46.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 259.5, 174.000031, 177.0, 53.0 ],
+					"style" : "",
+					"tabmode" : 0,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 0,
+					"varname" : "TextEditEng"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-84",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.333344, 98.796509, 172.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 333.5, 143.400635, 168.0, 20.0 ],
+					"style" : "",
+					"text" : "TIME INFOBELLS VOLUME"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-4",
@@ -866,7 +977,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -1120,13 +1230,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 541.0, 27.0, 58.0, 22.0 ],
 					"restore" : 					{
+						"TextEditEng" : [ "<empty>" ],
 						"TextEditTime" : [ "<empty>" ],
-						"live.dialTime" : [ 0.740157 ]
+						"live.dialTime" : [ 0.740157 ],
+						"live.dialVolumeTime" : [ 0.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u054010439"
+					"varname" : "u470001836"
 				}
 
 			}
@@ -1151,6 +1263,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1158,13 +1279,23 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
 			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ]
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-7" : [ "Volume Time", "Volume", 0 ],
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

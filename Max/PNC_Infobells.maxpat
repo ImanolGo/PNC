@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 172.5, 106.296509, 77.0, 22.0 ],
+					"style" : "",
+					"text" : "r timeVolInfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-186",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -547,7 +560,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u471008791"
+					"varname" : "u936000695"
 				}
 
 			}
@@ -1109,45 +1122,54 @@
 					"destination" : [ "obj-225", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-225", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-83::obj-36" : [ "Note Out Midi Channel[1]", "Channel", 0 ],
-			"obj-4::obj-50" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-20::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-42::obj-36" : [ "Note Out Midi Channel[8]", "Channel", 0 ],
-			"obj-3::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-32::obj-50" : [ "live.numbox[11]", "live.numbox", 0 ],
 			"obj-173::obj-36" : [ "Note Out Midi Channel[3]", "Channel", 0 ],
 			"obj-33::obj-36" : [ "Note Out Midi Channel[10]", "Channel", 0 ],
-			"obj-29::obj-36" : [ "Note Out Midi Channel[12]", "Channel", 0 ],
-			"obj-174::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-32::obj-36" : [ "Note Out Midi Channel[11]", "Channel", 0 ],
-			"obj-173::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-16::obj-36" : [ "Note Out Midi Channel[7]", "Channel", 0 ],
-			"obj-33::obj-50" : [ "live.numbox[10]", "live.numbox", 0 ],
 			"obj-4::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-20::obj-36" : [ "Note Out Midi Channel[5]", "Channel", 0 ],
-			"obj-32::obj-50" : [ "live.numbox[11]", "live.numbox", 0 ],
 			"obj-29::obj-50" : [ "live.numbox[12]", "live.numbox", 0 ],
-			"obj-16::obj-50" : [ "live.numbox[7]", "live.numbox", 0 ],
-			"obj-174::obj-36" : [ "Note Out Midi Channel[2]", "Channel", 0 ],
-			"obj-41::obj-50" : [ "live.numbox[9]", "live.numbox", 0 ],
-			"obj-42::obj-50" : [ "live.numbox[8]", "live.numbox", 0 ],
 			"obj-41::obj-36" : [ "Note Out Midi Channel[9]", "Channel", 0 ],
 			"obj-28::obj-50" : [ "live.numbox[13]", "live.numbox", 0 ],
-			"obj-4::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-3::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-32::obj-36" : [ "Note Out Midi Channel[11]", "Channel", 0 ],
 			"obj-83::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-20::obj-36" : [ "Note Out Midi Channel[5]", "Channel", 0 ],
+			"obj-20::obj-50" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-173::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-174::obj-36" : [ "Note Out Midi Channel[2]", "Channel", 0 ],
+			"obj-4::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-16::obj-50" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-42::obj-36" : [ "Note Out Midi Channel[8]", "Channel", 0 ],
+			"obj-17::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ],
+			"obj-4::obj-50" : [ "live.numbox[14]", "live.numbox", 0 ],
+			"obj-33::obj-50" : [ "live.numbox[10]", "live.numbox", 0 ],
+			"obj-28::obj-36" : [ "Note Out Midi Channel[13]", "Channel", 0 ],
+			"obj-21::obj-50" : [ "live.numbox[4]", "live.numbox", 0 ],
 			"obj-17::obj-36" : [ "Note Out Midi Channel[6]", "Channel", 0 ],
 			"obj-225" : [ "Volume Infobells", "Volume", 0 ],
-			"obj-3::obj-36" : [ "Note Out Midi Channel", "Channel", 0 ],
-			"obj-28::obj-36" : [ "Note Out Midi Channel[13]", "Channel", 0 ],
-			"obj-4::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-29::obj-36" : [ "Note Out Midi Channel[12]", "Channel", 0 ],
 			"obj-21::obj-36" : [ "Note Out Midi Channel[4]", "Channel", 0 ],
-			"obj-17::obj-50" : [ "live.numbox[6]", "live.numbox", 0 ]
+			"obj-174::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-42::obj-50" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-83::obj-36" : [ "Note Out Midi Channel[1]", "Channel", 0 ],
+			"obj-3::obj-36" : [ "Note Out Midi Channel", "Channel", 0 ],
+			"obj-16::obj-36" : [ "Note Out Midi Channel[7]", "Channel", 0 ],
+			"obj-41::obj-50" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"obj-4::obj-36" : [ "Control Number", "CC", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

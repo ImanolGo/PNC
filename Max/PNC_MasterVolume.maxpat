@@ -102,7 +102,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u941005437"
+					"varname" : "u884006658"
 				}
 
 			}

@@ -6217,7 +6217,7 @@
 					"presentation_rect" : [ 109.25, 341.22464, 49.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Control Number[3]",
+							"parameter_longname" : "Control Number[4]",
 							"parameter_shortname" : "CC",
 							"parameter_type" : 0,
 							"parameter_mmax" : 5.0,
@@ -8565,7 +8565,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u794013585"
+					"varname" : "u679011559"
 				}
 
 			}
@@ -13279,69 +13279,69 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-236::obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
-			"obj-248::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-235::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-236::obj-11" : [ "Time", "Time", 0 ],
-			"obj-3" : [ "Volume Air", "Volume", 0 ],
-			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
-			"obj-42::obj-67" : [ "TargetMin[3]", "Min", 0 ],
-			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-248::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
-			"obj-42::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-249::obj-11" : [ "Time[1]", "Time", 0 ],
-			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
-			"obj-42::obj-36" : [ "Control Number[4]", "CC", 0 ],
 			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-248::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-235::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-42::obj-70" : [ "TargetMax[3]", "Min", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-248::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-235::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-249::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
+			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
+			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-235::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-3" : [ "Volume Air", "Volume", 0 ],
+			"obj-235::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-248::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-42::obj-70" : [ "TargetMax[3]", "Min", 0 ],
+			"obj-42::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
 			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-235::obj-36" : [ "Control Number[1]", "CC", 0 ]
+			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
+			"obj-249::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
+			"obj-42::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-236::obj-11" : [ "Time", "Time", 0 ],
+			"obj-236::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-235::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-248::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-248::obj-70" : [ "TargetMax[2]", "Min", 0 ],
+			"obj-248::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-235::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
+			"obj-42::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "PNC_AirMidiSelector.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.2",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_AirBaySimulator.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.2",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_MidiCC.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.2",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_BaySelector.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.2",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_RampDelay.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.2",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
