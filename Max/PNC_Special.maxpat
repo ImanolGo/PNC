@@ -342,7 +342,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 318.0, 17.896362, 110.0, 20.0 ],
 					"style" : "",
-					"text" : "Special Mode"
+					"text" : "Special Envelope"
 				}
 
 			}
@@ -436,22 +436,6 @@
 					"presentation_rect" : [ 322.0, 158.000031, 179.0, 61.0 ],
 					"varname" : "PNC_MidiCC_Time",
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-2",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 448.75, 185.0, 110.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 384.0, 129.896362, 110.0, 20.0 ],
-					"style" : "",
-					"text" : "Special Envelope",
-					"textjustification" : 1
 				}
 
 			}
@@ -1502,7 +1486,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u596014109"
+					"varname" : "u802000590"
 				}
 
 			}
@@ -1608,21 +1592,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-18::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-9::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-12" : [ "Time Envelope Volume[1]", "Volume", 0 ],
-			"obj-18::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-18::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-9::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-9::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-18::obj-70" : [ "TargetMax[2]", "Min", 0 ],
 			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-14" : [ "Time Envelope Volume", "Volume", 0 ],
-			"obj-18::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-9::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
+			"obj-18::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
-			"obj-9::obj-36" : [ "Control Number[1]", "CC", 0 ]
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
+			"obj-9::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-18::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-9::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-12" : [ "Time Envelope Volume[1]", "Volume", 0 ],
+			"obj-9::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-18::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-14" : [ "Time Envelope Volume", "Volume", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
