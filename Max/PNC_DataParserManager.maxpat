@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -42.0, 79.0, 1204.0, 959.0 ],
+		"rect" : [ 33.0, 113.0, 1204.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -457,9 +457,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 699.0, 322.5, 96.0, 22.0 ],
+					"patching_rect" : [ 699.0, 322.5, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "s sendBlindSize"
+					"text" : "s sendShadesSize"
 				}
 
 			}
@@ -469,9 +469,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.0, 318.5, 107.0, 22.0 ],
+					"patching_rect" : [ 847.0, 318.5, 121.0, 22.0 ],
 					"style" : "",
-					"text" : "s sendBlindResult"
+					"text" : "s sendShadesResult"
 				}
 
 			}
@@ -482,9 +482,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 847.0, 156.5, 95.0, 22.0 ],
+					"patching_rect" : [ 847.0, 156.5, 109.0, 22.0 ],
 					"style" : "",
-					"text" : "r getBlindResult"
+					"text" : "r getShadesResult"
 				}
 
 			}
@@ -760,7 +760,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -2989,24 +2988,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
-			"obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
-			"obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
-			"obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
-			"obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
-			"obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
-			"obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
-			"obj-3" : [ "Frame[5]", "Frame", 0 ],
 			"obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
-			"obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
-			"obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
-			"obj-9" : [ "Floor[6]", "Floor", 0 ],
-			"obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
 			"obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
+			"obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
+			"obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-10" : [ "Bay[6]", "Bay", 0 ],
 			"obj-6::obj-3" : [ "Frame", "Frame", 0 ],
 			"obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
+			"obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
 			"obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
-			"obj-10" : [ "Bay[6]", "Bay", 0 ]
+			"obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-3" : [ "Frame[5]", "Frame", 0 ],
+			"obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
+			"obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
+			"obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
+			"obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
+			"obj-9" : [ "Floor[6]", "Floor", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

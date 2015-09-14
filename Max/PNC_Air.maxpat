@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1682.0, 1083.0 ],
+		"rect" : [ 860.0, 79.0, 1682.0, 1083.0 ],
 		"bgcolor" : [ 0.30894, 0.494611, 0.69986, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,30 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 614.666626, 439.0, 123.0, 20.0 ],
+					"style" : "",
+					"text" : "Tick Duration (ms)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-94",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 177.75, 397.0, 123.0, 20.0 ],
+					"style" : "",
+					"text" : "Tick Duration (ms)"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 1,
 					"border" : 0,
@@ -6578,7 +6602,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 480.0, 278.0, 1406.0, 903.0 ],
+						"rect" : [ 915.0, 117.0, 1406.0, 903.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8655,7 +8679,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u431012866"
+					"varname" : "u996011457"
 				}
 
 			}
@@ -13369,36 +13393,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-235::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-236::obj-10" : [ "Delay (ms)", "Delay", 0 ],
-			"obj-248::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-248::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-3" : [ "Volume Air", "Volume", 0 ],
-			"obj-42::obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-42::obj-67" : [ "TargetMin[3]", "Min", 0 ],
-			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
-			"obj-249::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
-			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
-			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
 			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-235::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-248::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-235::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-235::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-248::obj-67" : [ "TargetMin[2]", "Min", 0 ],
 			"obj-42::obj-70" : [ "TargetMax[3]", "Min", 0 ],
-			"obj-249::obj-11" : [ "Time[1]", "Time", 0 ],
-			"obj-42::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-236::obj-11" : [ "Time", "Time", 0 ],
+			"obj-248::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-248::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-249::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-36" : [ "Control Number[4]", "CC", 0 ],
+			"obj-3" : [ "Volume Air", "Volume", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
 			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
-			"obj-36" : [ "Control Number[4]", "CC", 0 ]
+			"obj-248::obj-70" : [ "TargetMax[2]", "Min", 0 ],
+			"obj-248::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-235::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
+			"obj-249::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-236::obj-11" : [ "Time", "Time", 0 ],
+			"obj-235::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-42::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-42::obj-36" : [ "Control Number[3]", "CC", 0 ],
+			"obj-42::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-235::obj-70" : [ "TargetMax[1]", "Min", 0 ],
+			"obj-236::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-235::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
