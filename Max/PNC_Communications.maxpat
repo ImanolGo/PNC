@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 381.0, 106.0, 963.0, 534.0 ],
+		"rect" : [ 381.0, 178.0, 963.0, 462.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -196,9 +196,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 336.333374, 306.0, 282.0, 22.0 ],
+					"patching_rect" : [ 336.333374, 306.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj net.tcp.send @address 127.0.0.1 @port 10001"
+					"text" : "mxj net.tcp.send @address 172.20.1.23 @port 10001"
 				}
 
 			}
@@ -385,9 +385,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.333374, 99.0, 140.0, 22.0 ],
+					"patching_rect" : [ 336.333374, 99.0, 153.0, 22.0 ],
 					"style" : "",
-					"text" : "udpsend 127.0.0.1 7777"
+					"text" : "udpsend 172.20.1.29 7777"
 				}
 
 			}
@@ -439,7 +439,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 433.500041, 348.0, 490.833374, 348.0 ],
+					"midpoints" : [ 438.166707, 348.0, 490.833374, 348.0 ],
 					"source" : [ "obj-29", 1 ]
 				}
 
@@ -459,7 +459,7 @@
 					"destination" : [ "obj-25", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 521.166707, 348.0, 563.833374, 348.0 ],
+					"midpoints" : [ 530.500041, 348.0, 563.833374, 348.0 ],
 					"source" : [ "obj-29", 2 ]
 				}
 
@@ -469,7 +469,7 @@
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 608.833374, 330.0, 673.833374, 330.0 ],
+					"midpoints" : [ 622.833374, 330.0, 673.833374, 330.0 ],
 					"source" : [ "obj-29", 3 ]
 				}
 
@@ -479,7 +479,7 @@
 					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 433.500041, 375.0, 454.833374, 375.0 ],
+					"midpoints" : [ 438.166707, 375.0, 454.833374, 375.0 ],
 					"source" : [ "obj-29", 1 ]
 				}
 
@@ -523,7 +523,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"embedsnapshot" : 0
 	}
 
 }

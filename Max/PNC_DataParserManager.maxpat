@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 33.0, 113.0, 1204.0, 959.0 ],
+		"rect" : [ 744.0, 617.0, 1204.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,45 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 173.0, 854.0, 285.0, 22.0 ],
+					"style" : "",
+					"text" : "progress 883063. 883063. 0. 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 106.0, 755.0, 281.0, 22.0 ],
+					"style" : "",
+					"text" : "get 172.20.1.21:8080/data/latestPopperFrame.json"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "dictionary", "" ],
+					"patching_rect" : [ 106.0, 798.0, 47.0, 22.0 ],
+					"style" : "",
+					"text" : "maxurl"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-108",
 					"maxclass" : "button",
@@ -993,7 +1032,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-48",
@@ -2721,6 +2759,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2756,6 +2803,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 563.0, 585.0, 563.0, 585.0 ],
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 1 ]
 				}
 
 			}
@@ -2988,24 +3044,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
-			"obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
-			"obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
-			"obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
-			"obj-10" : [ "Bay[6]", "Bay", 0 ],
-			"obj-6::obj-3" : [ "Frame", "Frame", 0 ],
-			"obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
+			"obj-87::obj-10" : [ "Bay[3]", "Bay", 0 ],
+			"obj-99::obj-3" : [ "Frame", "Frame", 0 ],
+			"obj-104::obj-10" : [ "Bay[2]", "Bay", 0 ],
 			"obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
-			"obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
-			"obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
-			"obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-104::obj-3" : [ "Frame[1]", "Frame", 0 ],
+			"obj-6::obj-3" : [ "Frame[6]", "Frame", 0 ],
+			"obj-87::obj-9" : [ "Floor[4]", "Floor", 0 ],
+			"obj-10" : [ "Bay[6]", "Bay", 0 ],
+			"obj-104::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-92::obj-10" : [ "Bay[7]", "Bay", 0 ],
+			"obj-6::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-6::obj-9" : [ "Floor[5]", "Floor", 0 ],
+			"obj-87::obj-3" : [ "Frame[3]", "Frame", 0 ],
+			"obj-99::obj-10" : [ "Bay[1]", "Bay", 0 ],
+			"obj-99::obj-9" : [ "Floor[1]", "Floor", 0 ],
 			"obj-3" : [ "Frame[5]", "Frame", 0 ],
-			"obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
-			"obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
-			"obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
-			"obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
-			"obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
-			"obj-9" : [ "Floor[6]", "Floor", 0 ]
+			"obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
