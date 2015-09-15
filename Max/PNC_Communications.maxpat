@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 519.0, 104.0, 153.0, 22.0 ],
+					"style" : "",
+					"text" : "udpsend 172.20.1.29 7779"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-13",
 					"maxclass" : "outlet",
@@ -322,7 +335,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.666626, 59.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "udpreceive 7777"
+					"text" : "udpreceive 7779"
 				}
 
 			}
@@ -348,9 +361,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 105.666626, 191.0, 179.0, 23.0 ],
+					"patching_rect" : [ 105.666626, 191.0, 115.0, 23.0 ],
 					"style" : "",
-					"text" : "print udpReceived @popup 1"
+					"text" : "print udpReceived"
 				}
 
 			}
@@ -385,9 +398,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.333374, 99.0, 153.0, 22.0 ],
+					"patching_rect" : [ 336.333374, 99.0, 140.0, 22.0 ],
 					"style" : "",
-					"text" : "udpsend 172.20.1.29 7777"
+					"text" : "udpsend 127.0.0.1 7779"
 				}
 
 			}
@@ -418,6 +431,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
@@ -523,9 +545,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
