@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 860.0, 79.0, 1682.0, 1083.0 ],
+		"rect" : [ 204.0, 79.0, 1682.0, 1083.0 ],
 		"bgcolor" : [ 0.30894, 0.494611, 0.69986, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -3327,6 +3327,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-7",
@@ -3336,19 +3337,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 43.0, 250.0, 50.0, 22.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 73.0, 212.0, 29.5, 22.0 ],
-									"style" : "",
-									"text" : "* 1."
 								}
 
 							}
@@ -3438,7 +3426,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 73.0, 173.0, 88.0, 22.0 ],
+									"patching_rect" : [ 74.0, 189.0, 88.0, 22.0 ],
 									"style" : "",
 									"text" : "r air_breathing"
 								}
@@ -3513,17 +3501,6 @@
 									"destination" : [ "obj-7", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 82.5, 237.0, 83.5, 237.0 ],
-									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 82.5, 198.0, 82.5, 198.0 ],
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -8679,7 +8656,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u996011457"
+					"varname" : "u210011914"
 				}
 
 			}
@@ -13393,36 +13370,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
-			"obj-42::obj-70" : [ "TargetMax[3]", "Min", 0 ],
-			"obj-248::obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-248::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
 			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-249::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
-			"obj-36" : [ "Control Number[4]", "CC", 0 ],
-			"obj-3" : [ "Volume Air", "Volume", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
-			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
 			"obj-248::obj-70" : [ "TargetMax[2]", "Min", 0 ],
-			"obj-248::obj-67" : [ "TargetMin[2]", "Min", 0 ],
-			"obj-235::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
-			"obj-249::obj-11" : [ "Time[1]", "Time", 0 ],
-			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-236::obj-11" : [ "Time", "Time", 0 ],
-			"obj-235::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-42::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
 			"obj-1::obj-70" : [ "TargetMax", "Min", 0 ],
-			"obj-42::obj-36" : [ "Control Number[3]", "CC", 0 ],
-			"obj-42::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-235::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-248::obj-67" : [ "TargetMin[2]", "Min", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
+			"obj-248::obj-50" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
+			"obj-249::obj-10" : [ "Delay (ms)[1]", "Delay", 0 ],
+			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
+			"obj-36" : [ "Control Number[4]", "CC", 0 ],
 			"obj-235::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-236::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-1::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
 			"obj-235::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ]
+			"obj-235::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-42::obj-70" : [ "TargetMax[3]", "Min", 0 ],
+			"obj-1::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-248::obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-1::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-42::obj-67" : [ "TargetMin[3]", "Min", 0 ],
+			"obj-42::obj-50" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-249::obj-11" : [ "Time[1]", "Time", 0 ],
+			"obj-3" : [ "Volume Air", "Volume", 0 ],
+			"obj-236::obj-11" : [ "Time", "Time", 0 ],
+			"obj-173" : [ "Volume Air[1]", "Volume", 0 ],
+			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ],
+			"obj-236::obj-10" : [ "Delay (ms)", "Delay", 0 ],
+			"obj-42::obj-36" : [ "Control Number[3]", "CC", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

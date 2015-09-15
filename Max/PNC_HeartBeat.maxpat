@@ -118,9 +118,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 191.579132, 250.0, 22.0 ],
+					"patching_rect" : [ 43.0, 191.579132, 246.0, 22.0 ],
 					"style" : "",
-					"text" : "{\\\"from\\\":\\\"hostname-tbd\\\"\\, \\\"status\\\":\\\"alive\\\"}"
+					"text" : "{\\\"from\\\":\\\"primaryaudio\\\"\\, \\\"status\\\":\\\"alive\\\"}"
 				}
 
 			}
@@ -179,9 +179,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
