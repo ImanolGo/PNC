@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 36.0, 79.0, 1325.0, 1076.0 ],
+		"rect" : [ 36.0, 79.0, 1364.0, 1076.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,21 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-119",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 793.083374, 710.0, 51.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 153.791626, 562.25, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "AIR02a"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 8.0,
 					"format" : 6,
@@ -1351,9 +1366,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 966.083374, 710.0, 44.0, 22.0 ],
+					"patching_rect" : [ 1008.083374, 710.0, 44.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 320.958374, 562.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 385.333496, 562.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "AIR06"
 				}
@@ -2551,9 +2566,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 914.083374, 710.0, 44.0, 22.0 ],
+					"patching_rect" : [ 956.083374, 710.0, 44.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 261.791626, 562.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 326.166748, 562.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "AIR05"
 				}
@@ -2593,9 +2608,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1023.791687, 710.0, 49.0, 22.0 ],
+					"patching_rect" : [ 1065.791626, 710.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 383.916626, 568.25, 44.0, 22.0 ],
+					"presentation_rect" : [ 447.166748, 562.25, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "AIR99"
 				}
@@ -2608,9 +2623,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.083374, 710.0, 44.0, 22.0 ],
+					"patching_rect" : [ 900.083374, 710.0, 44.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 205.791626, 562.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 270.166748, 562.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "AIR04"
 				}
@@ -2623,9 +2638,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 807.083374, 710.0, 44.0, 22.0 ],
+					"patching_rect" : [ 849.083374, 710.0, 44.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 148.625, 562.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 213.000122, 562.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "AIR03"
 				}
@@ -2685,7 +2700,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 672.5, 620.0, 594.25, 247.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.0, 520.25, 419.666748, 95.5 ],
+					"presentation_rect" : [ 34.0, 520.25, 471.0, 94.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -3580,12 +3595,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 608.0, 49.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dialArtificialLight" : [ 0.386614 ],
+						"live.dialArtificialLight" : [ 0.583464 ],
 						"live.dialCompost" : [ 0.283465 ],
 						"live.dialFresh" : [ 0.511811 ],
 						"live.dialRecycle" : [ 0.708662 ],
 						"live.dialRecycled" : [ 0.171653 ],
-						"live.dialSolarRadiation" : [ 0.453544 ],
+						"live.dialSolarRadiation" : [ 0.48504 ],
 						"live.dialWaste" : [ 0.195276 ],
 						"live.dialWeatherCloudCover" : [ 4.0 ],
 						"live.dialWeatherConditions" : [ 2.0 ],
@@ -3596,7 +3611,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u674003666"
+					"varname" : "u437001623"
 				}
 
 			}
@@ -3694,7 +3709,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 617.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/sunlight_artificial 0.386614"
+					"text" : "/sunlight_artificial 0.583464"
 				}
 
 			}
@@ -3762,7 +3777,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 723.166626, 133.25, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "CHI01",
+					"text" : "SUN99",
 					"textjustification" : 1
 				}
 
@@ -4287,7 +4302,7 @@
 					"destination" : [ "obj-112", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1033.291687, 762.0, 736.583374, 762.0 ],
+					"midpoints" : [ 1075.291626, 762.0, 736.583374, 762.0 ],
 					"source" : [ "obj-107", 0 ]
 				}
 
@@ -4297,7 +4312,7 @@
 					"destination" : [ "obj-112", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 867.583374, 762.0, 736.583374, 762.0 ],
+					"midpoints" : [ 909.583374, 762.0, 736.583374, 762.0 ],
 					"source" : [ "obj-108", 0 ]
 				}
 
@@ -4307,7 +4322,7 @@
 					"destination" : [ "obj-112", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 816.583374, 762.0, 736.583374, 762.0 ],
+					"midpoints" : [ 858.583374, 762.0, 736.583374, 762.0 ],
 					"source" : [ "obj-109", 0 ]
 				}
 
@@ -4357,7 +4372,7 @@
 					"destination" : [ "obj-112", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 923.583374, 762.0, 736.583374, 762.0 ],
+					"midpoints" : [ 965.583374, 762.0, 736.583374, 762.0 ],
 					"source" : [ "obj-115", 0 ]
 				}
 
@@ -4367,7 +4382,7 @@
 					"destination" : [ "obj-112", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 975.583374, 753.5, 736.583374, 753.5 ],
+					"midpoints" : [ 1017.583374, 762.0, 736.583374, 762.0 ],
 					"source" : [ "obj-116", 0 ]
 				}
 
@@ -4377,7 +4392,18 @@
 					"destination" : [ "obj-155", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1899.75, 576.0, 1899.75, 576.0 ],
 					"source" : [ "obj-118", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 802.583374, 762.0, 736.583374, 762.0 ],
+					"source" : [ "obj-119", 0 ]
 				}
 
 			}
@@ -4386,7 +4412,7 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 517.75, 549.0, 89.583374, 549.0 ],
+					"midpoints" : [ 517.75, 516.0, 501.0, 516.0, 501.0, 549.0, 89.583374, 549.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -4396,6 +4422,7 @@
 					"destination" : [ "obj-164", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1456.5, 618.0, 1428.0, 618.0, 1428.0, 624.0, 1395.125, 624.0 ],
 					"source" : [ "obj-121", 0 ]
 				}
 
@@ -4405,6 +4432,7 @@
 					"destination" : [ "obj-165", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1484.5, 618.0, 1458.0, 618.0, 1458.0, 624.0, 1455.5, 624.0 ],
 					"source" : [ "obj-121", 1 ]
 				}
 
@@ -4414,6 +4442,7 @@
 					"destination" : [ "obj-166", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1512.5, 624.0, 1515.875, 624.0 ],
 					"source" : [ "obj-121", 2 ]
 				}
 
@@ -4423,6 +4452,7 @@
 					"destination" : [ "obj-168", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1540.5, 624.0, 1568.5, 624.0 ],
 					"source" : [ "obj-121", 3 ]
 				}
 
@@ -4432,6 +4462,7 @@
 					"destination" : [ "obj-169", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1568.5, 624.0, 1618.75, 624.0 ],
 					"source" : [ "obj-121", 4 ]
 				}
 
@@ -4441,6 +4472,7 @@
 					"destination" : [ "obj-136", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1863.75, 465.0, 1863.75, 465.0 ],
 					"source" : [ "obj-122", 0 ]
 				}
 
@@ -4550,6 +4582,7 @@
 					"destination" : [ "obj-87", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1863.75, 558.0, 1866.0, 558.0, 1866.0, 594.0, 1590.0, 594.0, 1590.0, 528.0, 1351.583374, 528.0 ],
 					"source" : [ "obj-136", 0 ]
 				}
 
@@ -4689,6 +4722,7 @@
 					"destination" : [ "obj-154", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1899.75, 615.0, 1900.75, 615.0 ],
 					"source" : [ "obj-155", 0 ]
 				}
 
@@ -4698,6 +4732,7 @@
 					"destination" : [ "obj-96", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1786.75, 387.0, 1786.75, 387.0 ],
 					"source" : [ "obj-156", 0 ]
 				}
 
@@ -4717,6 +4752,7 @@
 					"destination" : [ "obj-179", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1231.75, 555.0, 1181.125, 555.0 ],
 					"source" : [ "obj-181", 1 ]
 				}
 
@@ -4726,6 +4762,7 @@
 					"destination" : [ "obj-180", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 1120.75, 555.0, 1120.75, 555.0 ],
 					"source" : [ "obj-181", 0 ]
 				}
 
@@ -4735,6 +4772,7 @@
 					"destination" : [ "obj-183", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 626.791687, 555.0, 585.166687, 555.0 ],
 					"source" : [ "obj-185", 1 ]
 				}
 
@@ -4744,6 +4782,7 @@
 					"destination" : [ "obj-184", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 524.791687, 555.0, 524.791687, 555.0 ],
 					"source" : [ "obj-185", 0 ]
 				}
 
@@ -4753,6 +4792,7 @@
 					"destination" : [ "obj-188", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 573.5, 648.0, 543.0, 648.0, 543.0, 654.0, 540.666687, 654.0 ],
 					"source" : [ "obj-191", 2 ]
 				}
 
@@ -4762,6 +4802,7 @@
 					"destination" : [ "obj-189", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 514.0, 648.0, 483.0, 648.0, 483.0, 654.0, 480.291687, 654.0 ],
 					"source" : [ "obj-191", 1 ]
 				}
 
@@ -4771,6 +4812,7 @@
 					"destination" : [ "obj-190", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 454.5, 648.0, 420.0, 648.0, 420.0, 654.0, 419.916687, 654.0 ],
 					"source" : [ "obj-191", 0 ]
 				}
 
@@ -4810,7 +4852,7 @@
 					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1110.75, 549.0, 736.583374, 549.0 ],
+					"midpoints" : [ 1110.75, 516.0, 1083.0, 516.0, 1083.0, 549.0, 736.583374, 549.0 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -5070,7 +5112,7 @@
 					"destination" : [ "obj-152", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1340.75, 1017.5, 1258.75, 1017.5 ],
+					"midpoints" : [ 1340.75, 1023.0, 1258.75, 1023.0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -5250,7 +5292,7 @@
 					"destination" : [ "obj-87", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1700.75, 585.0, 1422.0, 585.0, 1422.0, 528.0, 1351.583374, 528.0 ],
+					"midpoints" : [ 1700.75, 585.0, 1590.0, 585.0, 1590.0, 528.0, 1351.583374, 528.0 ],
 					"source" : [ "obj-98", 0 ]
 				}
 
@@ -5293,63 +5335,63 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "PNC_Heartbeat.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_Failover.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_Communications.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_MasterVolume.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_Moments.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_LiveOsc.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_DataParserManager.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_DataParser.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "conditions.txt",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.4",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

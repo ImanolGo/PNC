@@ -38,14 +38,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-22",
+					"id" : "obj-27",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.0, 32.0, 45.0, 22.0 ],
+					"patching_rect" : [ 187.0, 36.0, 140.0, 22.0 ],
 					"style" : "",
-					"text" : "hi.json"
+					"text" : "latestFlopperFrame.json"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 233.5, 190.5, 283.0, 22.0 ],
+					"style" : "",
+					"text" : "get 172.20.1.21:8080/data/latestFlopperFrame.json"
 				}
 
 			}
@@ -374,7 +387,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "dictionary" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -385,7 +398,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 851.0, 475.0, 1023.0, 775.0 ],
+						"rect" : [ 521.0, 188.0, 1023.0, 775.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -412,6 +425,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-13",
@@ -487,7 +501,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "dictionary", "" ],
-									"patching_rect" : [ 202.0, 397.0, 85.0, 22.0 ],
+									"patching_rect" : [ 202.0, 417.0, 85.0, 22.0 ],
 									"style" : "",
 									"text" : "dict.strip body"
 								}
@@ -520,7 +534,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 247.0, 332.0, 320.0, 22.0 ],
 									"style" : "",
-									"text" : "progress 883063. 883063. 0. 0."
+									"text" : "progress 794891. 794891. 0. 0."
 								}
 
 							}
@@ -559,7 +573,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 182.0, 191.0, 304.0, 22.0 ],
 									"style" : "",
-									"text" : "get 172.20.1.21:8080/data/latestPopperFrame.json"
+									"text" : "get 172.20.1.21:8080/data/latestFlopperFrame.json"
 								}
 
 							}
@@ -725,7 +739,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-9", 0 ]
@@ -1503,15 +1517,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1536,6 +1541,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 143.5, 585.0, 143.5, 585.0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
