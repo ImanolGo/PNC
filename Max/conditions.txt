@@ -1,0 +1,10 @@
+0, "unknown";
+1, "clear";
+2, "partlyCloudy";
+3, "cloudy";
+4, "showers";
+5, "rain";
+6, "thunderstorms";
+7, "ice";
+8, "flurries";
+9, "snow";
