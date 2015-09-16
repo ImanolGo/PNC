@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 358.0, 143.0, 1318.0, 967.0 ],
+		"rect" : [ 358.0, 143.0, 1041.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -716,27 +716,28 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 867.5, 29.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"live.dialMasterVolume" : [ 0.66 ],
+						"live.dialMasterVolume" : [ 0.69 ],
 						"live.dialMasterVolumeAux" : [ 0.748031 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u914014855"
+					"varname" : "u179004644"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 16.0,
 					"id" : "obj-8",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 284.666626, 502.0, 50.0, 47.0 ],
+					"patching_rect" : [ 284.666626, 502.0, 57.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 3.0, 45.0, 47.0 ],
+					"presentation_rect" : [ 1.0, 3.0, 71.0, 60.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
@@ -1272,8 +1273,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-73" : [ "live.dial[1]", "Volume", 0 ],
-			"obj-8" : [ "live.dial", "Volume", 0 ]
+			"obj-8" : [ "live.dial", "Volume", 0 ],
+			"obj-73" : [ "live.dial[1]", "Volume", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],

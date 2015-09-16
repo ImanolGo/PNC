@@ -120,7 +120,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 191.579132, 246.0, 22.0 ],
 					"style" : "",
-					"text" : "{\\\"from\\\":\\\"primaryaudio\\\"\\, \\\"status\\\":\\\"alive\\\"}"
+					"text" : "{\\\"from\\\":\\\"audioprimary\\\"\\, \\\"status\\\":\\\"alive\\\"}"
 				}
 
 			}
@@ -179,7 +179,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"embedsnapshot" : 0
 	}
 
 }
