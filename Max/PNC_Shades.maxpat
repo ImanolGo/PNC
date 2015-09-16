@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 506.0, 250.0, 1405.0, 1082.0 ],
+		"rect" : [ 249.0, 79.0, 1405.0, 1082.0 ],
 		"bgcolor" : [ 0.790127, 0.340919, 0.279903, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -77,7 +77,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 60.0, 183.0, 1556.0, 628.0 ],
+						"rect" : [ 512.0, 366.0, 1556.0, 628.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -391,7 +391,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 73.25, 360.0, 108.0, 22.0 ],
+									"patching_rect" : [ 69.25, 360.0, 108.0, 22.0 ],
 									"style" : "",
 									"text" : "r sendShadesSize"
 								}
@@ -1065,7 +1065,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 18.25, 326.5, 181.0, 22.0 ],
+									"patching_rect" : [ 23.25, 330.5, 181.0, 22.0 ],
 									"style" : "",
 									"text" : "r triggerShadesTimeLapseMode"
 								}
@@ -1091,7 +1091,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 18.25, 229.5, 163.0, 22.0 ],
+									"patching_rect" : [ 18.25, 203.5, 163.0, 22.0 ],
 									"style" : "",
 									"text" : "r triggerShadesCurrentMode"
 								}
@@ -1141,7 +1141,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 243.0, 531.0, 90.0, 22.0 ],
+									"patching_rect" : [ 239.75, 528.0, 90.0, 22.0 ],
 									"style" : "",
 									"text" : "s frame_shade"
 								}
@@ -1211,7 +1211,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 252.5, 510.0, 252.5, 510.0 ],
+									"midpoints" : [ 252.5, 510.0, 249.25, 510.0 ],
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -1271,7 +1271,7 @@
 									"destination" : [ "obj-19", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 27.75, 351.0, 27.75, 351.0 ],
+									"midpoints" : [ 32.75, 351.0, 27.75, 351.0 ],
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -1621,7 +1621,7 @@
 									"destination" : [ "obj-19", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 82.75, 390.0, 80.25, 390.0 ],
+									"midpoints" : [ 78.75, 390.0, 80.25, 390.0 ],
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -7196,7 +7196,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u596004212"
+					"varname" : "u718015557"
 				}
 
 			}
@@ -11820,24 +11820,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-110::obj-36" : [ "Control Number[1]", "CC", 0 ],
-			"obj-64::obj-36" : [ "Control Number", "CC", 0 ],
-			"obj-64::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
-			"obj-64::obj-67" : [ "TargetMin", "Min", 0 ],
 			"obj-29" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-110::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
-			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
-			"obj-36" : [ "Control Number[2]", "CC", 0 ],
-			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
 			"obj-64::obj-70" : [ "TargetMax", "Min", 0 ],
+			"obj-110::obj-36" : [ "Control Number[1]", "CC", 0 ],
+			"obj-6" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
+			"obj-22" : [ "live.numbox[26]", "live.numbox[7]", 0 ],
+			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
 			"obj-3" : [ "Volume Shades", "Volume", 0 ],
-			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-110::obj-67" : [ "TargetMin[1]", "Min", 0 ],
 			"obj-89" : [ "Shades Volume", "Volume", 0 ],
 			"obj-110::obj-70" : [ "TargetMax[1]", "Min", 0 ],
-			"obj-31" : [ "live.numbox[19]", "live.numbox", 0 ],
+			"obj-64::obj-67" : [ "TargetMin", "Min", 0 ],
+			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-110::obj-67" : [ "TargetMin[1]", "Min", 0 ],
+			"obj-110::obj-50" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-64::obj-36" : [ "Control Number", "CC", 0 ],
+			"obj-36" : [ "Control Number[2]", "CC", 0 ],
+			"obj-64::obj-50" : [ "live.numbox[24]", "live.numbox", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
 			"obj-35" : [ "live.numbox[17]", "live.numbox", 0 ]
 		}
 ,

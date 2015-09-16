@@ -7455,7 +7455,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 480.0, 117.0, 1406.0, 903.0 ],
+						"rect" : [ 480.0, 499.0, 1406.0, 903.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8438,19 +8438,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-69",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.25, 334.5, 155.0, 22.0 ],
-									"style" : "",
-									"text" : "r triggerAirTimeLapseMode"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-70",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -8469,7 +8456,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.25, 237.5, 137.0, 22.0 ],
+									"patching_rect" : [ 39.25, 213.0, 137.0, 22.0 ],
 									"style" : "",
 									"text" : "r triggerAirCurrentMode"
 								}
@@ -8497,18 +8484,6 @@
 									"patching_rect" : [ 300.333313, 492.0, 87.333374, 20.0 ],
 									"style" : "",
 									"text" : "frame number"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-76",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 247.0, 533.0, 71.0, 22.0 ],
-									"style" : "",
-									"text" : "s frame_air"
 								}
 
 							}
@@ -8694,19 +8669,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-67",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.25, 237.5, 137.0, 22.0 ],
-									"style" : "",
-									"text" : "r triggerAirCurrentMode"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -8724,7 +8686,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 247.0, 533.0, 71.0, 22.0 ],
+									"patching_rect" : [ 247.0, 541.0, 71.0, 22.0 ],
 									"style" : "",
 									"text" : "s frame_air"
 								}
@@ -9268,16 +9230,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 48.75, 261.0, 48.75, 261.0 ],
-									"source" : [ "obj-67", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -9534,7 +9486,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u814010960"
+					"varname" : "u777004530"
 				}
 
 			}
@@ -14390,35 +14342,35 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "PNC_AirMidiSelector.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.5",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_AirBaySimulator.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.5",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_MidiCC.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.5",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_BaySelector.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.5",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PNC_RampDelay.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.5",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

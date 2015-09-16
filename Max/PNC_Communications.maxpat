@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 381.0, 178.0, 963.0, 462.0 ],
+		"rect" : [ 381.0, 178.0, 943.0, 526.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -266,9 +266,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.666626, 404.0, 175.0, 23.0 ],
+					"patching_rect" : [ 101.666626, 404.0, 111.0, 23.0 ],
 					"style" : "",
-					"text" : "print tcpReceived @popup 1"
+					"text" : "print tcpReceived"
 				}
 
 			}
@@ -545,7 +545,18 @@
 				}
 
 			}
- ]
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+ ],
+		"dependency_cache" : [  ],
+		"embedsnapshot" : 0
 	}
 
 }
