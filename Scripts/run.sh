@@ -6,23 +6,28 @@
 #
 #-----------------------------------------------------------
 
-echo '-> Start PNC Audio Machine'
+echo '-> Wait'
 
 dir=$(dirname $0)
 cd $dir
 
-echo '-> Starting Fade Candy Server'
+PROCESS=Max
+if pgrep $PROCESS
+	then
+		echo '-> Max process already exit'
+	else
+		open -a ../Max/PNC_Main.maxpat
+fi
 
 PROCESS=Live
-
 if pgrep $PROCESS
 	then
 		echo '-> Live process already exit'
 	else
-		cd ../Live/PNC\ MODE\ TESTER\ Project/
-		open PNC\ MODE\ TESTER.als
-		echo '-> Starting Live'
+		open -a ../Live/PNC_Live.als
 fi
+
+
 
 
 
