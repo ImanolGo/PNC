@@ -116,7 +116,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 911.5, 949.0, 144.0, 22.0 ],
 					"style" : "",
-					"text" : "0. 0."
+					"text" : "1. 83.1"
 				}
 
 			}
@@ -2648,7 +2648,7 @@
 					"patching_rect" : [ 943.0, 733.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Frame[5]",
+							"parameter_longname" : "Frame[6]",
 							"parameter_shortname" : "Frame",
 							"parameter_type" : 0,
 							"parameter_mmax" : 191.0,
@@ -2672,7 +2672,7 @@
 					"patching_rect" : [ 1035.0, 733.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Bay[6]",
+							"parameter_longname" : "Bay[7]",
 							"parameter_shortname" : "Bay",
 							"parameter_type" : 0,
 							"parameter_mmax" : 11.0,
@@ -2696,7 +2696,7 @@
 					"patching_rect" : [ 989.0, 733.5, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Floor[6]",
+							"parameter_longname" : "Floor[7]",
 							"parameter_shortname" : "Floor",
 							"parameter_type" : 0,
 							"parameter_mmax" : 27.0,
@@ -3212,26 +3212,26 @@
  ],
 		"parameters" : 		{
 			"obj-6::obj-3" : [ "Frame", "Frame", 0 ],
-			"obj-3" : [ "Frame[5]", "Frame", 0 ],
-			"obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
-			"obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
-			"obj-18::obj-10" : [ "Bay[7]", "Bay", 0 ],
-			"obj-9" : [ "Floor[6]", "Floor", 0 ],
 			"obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
-			"obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
-			"obj-18::obj-9" : [ "Floor[7]", "Floor", 0 ],
-			"obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
-			"obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
-			"obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
 			"obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
-			"obj-18::obj-3" : [ "Frame[6]", "Frame", 0 ],
-			"obj-10" : [ "Bay[6]", "Bay", 0 ],
-			"obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
-			"obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
-			"obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
 			"obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-18::obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-3" : [ "Frame[6]", "Frame", 0 ],
+			"obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
+			"obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
+			"obj-99::obj-10" : [ "Bay[5]", "Bay", 0 ],
+			"obj-18::obj-10" : [ "Bay[6]", "Bay", 0 ],
+			"obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-9" : [ "Floor[7]", "Floor", 0 ],
+			"obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
+			"obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
+			"obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
+			"obj-10" : [ "Bay[7]", "Bay", 0 ],
+			"obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-18::obj-3" : [ "Frame[5]", "Frame", 0 ],
 			"obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
-			"obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ]
+			"obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
