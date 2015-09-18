@@ -118,9 +118,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 191.579132, 303.0, 22.0 ],
+					"patching_rect" : [ 43.0, 191.579132, 301.0, 22.0 ],
 					"style" : "",
-					"text" : "{\\\"from\\\":\\\"hostname-audioprimary\\\"\\, \\\"status\\\":\\\"alive\\\"}"
+					"text" : "{\\\"from\\\":\\\"hostname-audiobackup\\\"\\, \\\"status\\\":\\\"alive\\\"}"
 				}
 
 			}
