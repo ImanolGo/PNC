@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-171",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1446.0, 952.0, 49.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 485.270874, 766.75, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "ANN02"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-170",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -46,9 +61,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 548.770874, 1037.0, 69.624939, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.25, 984.5, 48.0, 22.0 ],
+					"presentation_rect" : [ 47.25, 984.5, 45.0, 22.0 ],
 					"style" : "",
-					"text" : "CHL99"
+					"text" : "CHI99"
 				}
 
 			}
@@ -61,9 +76,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 449.75, 1037.0, 78.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.25, 961.25, 61.0, 22.0 ],
+					"presentation_rect" : [ 47.25, 961.25, 65.0, 22.0 ],
 					"style" : "",
-					"text" : "CHLOOP"
+					"text" : "CHILOOP"
 				}
 
 			}
@@ -2346,7 +2361,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1194.666626, 881.0, 246.25, 242.0 ],
+					"patching_rect" : [ 1194.666626, 881.0, 305.25, 242.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 274.4375, 748.75, 272.6875, 80.5 ],
 					"proportion" : 0.39,
@@ -3707,7 +3722,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u288012186"
+					"varname" : "u157003493"
 				}
 
 			}
@@ -3874,7 +3889,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 723.166626, 133.25, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "SHA99",
+					"text" : "CHLOOP",
 					"textjustification" : 1
 				}
 
@@ -4940,6 +4955,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-152", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1455.5, 1005.0, 1258.75, 1005.0 ],
+					"source" : [ "obj-171", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-179", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5498,6 +5523,7 @@
 			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
 			"obj-159::obj-70" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-58::obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
+			"obj-58::obj-10" : [ "Bay[5]", "Bay", 0 ],
 			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
 			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
@@ -5512,7 +5538,6 @@
 			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
 			"obj-58::obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
 			"obj-59" : [ "Compost", "Compost", 0 ],
-			"obj-58::obj-10" : [ "Bay[6]", "Bay", 0 ],
 			"obj-159::obj-72" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-58::obj-23::obj-3" : [ "Frame[5]", "Frame", 0 ]
 		}
