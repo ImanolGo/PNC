@@ -182,6 +182,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-91",
@@ -1369,7 +1370,6 @@
 									"destination" : [ "obj-16", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 1387.5, 240.0, 1387.5, 240.0 ],
 									"source" : [ "obj-22", 1 ]
 								}
 
@@ -1529,7 +1529,6 @@
 									"destination" : [ "obj-33", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 807.5, 375.0, 807.5, 375.0 ],
 									"source" : [ "obj-37", 1 ]
 								}
 
@@ -1579,7 +1578,6 @@
 									"destination" : [ "obj-40", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 1096.5, 375.0, 1096.5, 375.0 ],
 									"source" : [ "obj-44", 1 ]
 								}
 
@@ -1629,7 +1627,6 @@
 									"destination" : [ "obj-47", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 1385.5, 375.0, 1385.5, 375.0 ],
 									"source" : [ "obj-50", 1 ]
 								}
 
@@ -1679,7 +1676,6 @@
 									"destination" : [ "obj-53", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 807.5, 510.0, 807.5, 510.0 ],
 									"source" : [ "obj-56", 1 ]
 								}
 
@@ -1779,7 +1775,6 @@
 									"destination" : [ "obj-95", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 807.5, 240.0, 807.5, 240.0 ],
 									"source" : [ "obj-84", 1 ]
 								}
 
@@ -1799,7 +1794,6 @@
 									"destination" : [ "obj-5", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 1096.5, 240.0, 1096.5, 240.0 ],
 									"source" : [ "obj-9", 1 ]
 								}
 
@@ -6418,7 +6412,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u791003982"
+					"varname" : "u917002030"
 				}
 
 			}
@@ -11118,8 +11112,8 @@
 			"obj-64::obj-70" : [ "TargetMax", "Min", 0 ],
 			"obj-110::obj-70" : [ "TargetMax[1]", "Min", 0 ],
 			"obj-110::obj-67" : [ "TargetMin[1]", "Min", 0 ],
-			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
 			"obj-89" : [ "Shades Volume", "Volume", 0 ],
+			"obj-225" : [ "Time Envelope", "Envelope", 0 ],
 			"obj-74" : [ "live.numbox[25]", "live.numbox[7]", 0 ],
 			"obj-7" : [ "live.numbox[18]", "live.numbox", 0 ],
 			"obj-29" : [ "live.numbox", "live.numbox", 0 ],

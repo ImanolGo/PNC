@@ -58,7 +58,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 506.916656, 994.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "0. 0."
+					"text" : "0. 78.2"
 				}
 
 			}
@@ -149,7 +149,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 424.0, 741.0, 82.0, 89.0 ],
 					"style" : "",
-					"text" : "get \"data::t:2015-09-15T09:45:00-04:00 New_York[335]\""
+					"text" : "get \"data::t:2015-09-15T21:15:00-04:00 New_York[84]\""
 				}
 
 			}
@@ -160,9 +160,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 187.0, 36.0, 140.0, 22.0 ],
+					"patching_rect" : [ 187.0, 36.0, 167.0, 22.0 ],
 					"style" : "",
-					"text" : "latestFlopperFrame.json"
+					"text" : "latestTemperatureFrame.json"
 				}
 
 			}
@@ -447,7 +447,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 74.5, 287.0, 192.0, 22.0 ],
 									"style" : "",
-									"text" : "latestFlopperFrame.json"
+									"text" : "latestTemperatureFrame.json"
 								}
 
 							}
@@ -1863,7 +1863,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 547.5, 261.0, 525.0, 261.0, 525.0, 312.0, 547.5, 312.0 ],
+					"midpoints" : [ 547.5, 261.0, 548.0, 261.0, 548.0, 312.0, 547.5, 312.0 ],
 					"source" : [ "obj-94", 0 ]
 				}
 
