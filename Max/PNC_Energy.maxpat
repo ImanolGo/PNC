@@ -9177,14 +9177,14 @@
 						"live.numbox[3]_air" : [ 3.0 ],
 						"live.numbox[4]_air" : [ 2.0 ],
 						"live.numbox[5]_air" : [ 0.0 ],
-						"live.numbox[6]" : [ 281.690141 ],
+						"live.numbox[6]" : [ 200.551181 ],
 						"live.numbox[7]_air" : [ 330.0 ],
 						"live.numbox_air" : [ 1.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u885004338"
+					"varname" : "u686016708"
 				}
 
 			}
@@ -10034,16 +10034,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 1098.5, 381.0, 1098.5, 381.0 ],
 					"source" : [ "obj-100", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 160.75, 360.0, 290.75, 360.0 ],
-					"source" : [ "obj-101", 1 ]
 				}
 
 			}

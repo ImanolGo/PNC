@@ -374,9 +374,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 118.5, 253.0, 113.0, 22.0 ],
+					"patching_rect" : [ 118.5, 253.0, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "zmap 0. 95. 0. 127."
+					"text" : "zmap 0. 120. 0. 127."
 				}
 
 			}
@@ -763,16 +763,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "PNC_AirDataParser.maxpat",
-				"bootpath" : "~/Dropbox/PNC/Max/v1.7",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"embedsnapshot" : 0
+ ]
 	}
 
 }
