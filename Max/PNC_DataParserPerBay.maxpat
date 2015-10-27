@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 699.0, 181.0, 700.0, 981.0 ],
+		"rect" : [ 699.0, 181.0, 601.0, 981.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -173,7 +173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 228.5, 265.5, 283.0, 22.0 ],
+					"patching_rect" : [ 232.5, 281.5, 283.0, 22.0 ],
 					"style" : "",
 					"text" : "get 172.20.1.21:8080/data/latestFlopperFrame.json"
 				}
@@ -847,9 +847,11 @@
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "number",
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
+					"outputonclick" : 1,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 129.0, 587.0, 50.0, 22.0 ],
 					"style" : ""
@@ -1073,6 +1075,7 @@
 				"box" : 				{
 					"id" : "obj-69",
 					"maxclass" : "number",
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -1901,8 +1904,8 @@
  ],
 		"parameters" : 		{
 			"obj-3" : [ "Frame", "Frame", 0 ],
-			"obj-10" : [ "Bay[1]", "Bay", 0 ],
-			"obj-9" : [ "Floor[1]", "Floor", 0 ]
+			"obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-10" : [ "Bay[1]", "Bay", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
