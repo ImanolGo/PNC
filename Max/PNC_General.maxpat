@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-173",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1429.0, 1048.0, 43.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 504.270874, 763.25, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "NIT01"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-172",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -46,7 +61,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1429.0, 1007.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.270874, 763.25, 49.0, 22.0 ],
+					"presentation_rect" : [ 394.625, 763.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "ANN99"
 				}
@@ -61,7 +76,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1446.0, 952.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 485.270874, 762.75, 49.0, 22.0 ],
+					"presentation_rect" : [ 449.270874, 763.25, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "ANN02"
 				}
@@ -2333,7 +2348,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1212.25, 898.5, 131.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 294.0625, 763.25, 114.4375, 20.0 ],
+					"presentation_rect" : [ 289.958252, 763.25, 114.4375, 20.0 ],
 					"style" : "",
 					"text" : "Special Mode"
 				}
@@ -2378,7 +2393,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1194.666626, 881.0, 305.25, 242.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 274.4375, 748.75, 272.6875, 80.5 ],
+					"presentation_rect" : [ 274.4375, 748.75, 293.4375, 80.5 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -3737,7 +3752,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u607006617"
+					"varname" : "u706006516"
 				}
 
 			}
@@ -3836,7 +3851,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 631.166626, 258.75, 315.0, 22.0 ],
 					"style" : "",
-					"text" : "/sunlight_artificial 0.583464"
+					"text" : "/weather_cloud_cover 4"
 				}
 
 			}
@@ -3904,7 +3919,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 737.166626, 133.25, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "CHLOOP",
+					"text" : "1",
 					"textjustification" : 1
 				}
 
@@ -4990,6 +5005,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-152", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-173", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-179", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5530,41 +5554,41 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-58::obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
-			"obj-58::obj-10" : [ "Bay[5]", "Bay", 0 ],
-			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-58::obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
-			"obj-58::obj-23::obj-3" : [ "Frame[5]", "Frame", 0 ],
-			"obj-159::obj-72" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-58::obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
-			"obj-58::obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
 			"obj-58::obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
-			"obj-58::obj-3" : [ "Frame[6]", "Frame", 0 ],
+			"obj-58::obj-23::obj-3" : [ "Frame[5]", "Frame", 0 ],
+			"obj-58::obj-9" : [ "Floor[7]", "Floor", 0 ],
+			"obj-159::obj-72" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-58::obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
+			"obj-122" : [ "Weather Condition", "Condition", 0 ],
 			"obj-58::obj-23::obj-9" : [ "Floor[6]", "Floor", 0 ],
 			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
-			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
-			"obj-122" : [ "Weather Condition", "Condition", 0 ],
-			"obj-159::obj-66" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-58::obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
-			"obj-26::obj-73" : [ "live.dial[1]", "Volume", 0 ],
-			"obj-159::obj-70" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
-			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
-			"obj-58::obj-9" : [ "Floor[7]", "Floor", 0 ],
-			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
-			"obj-58::obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
 			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
-			"obj-58::obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-89" : [ "Weather Wind", "Wind", 0 ],
+			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
 			"obj-58::obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
-			"obj-59" : [ "Compost", "Compost", 0 ],
+			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
+			"obj-58::obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
+			"obj-58::obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
+			"obj-58::obj-10" : [ "Bay[5]", "Bay", 0 ],
+			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
 			"obj-58::obj-6::obj-3" : [ "Frame", "Frame", 0 ],
+			"obj-58::obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
 			"obj-58::obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
 			"obj-58::obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
-			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
-			"obj-60" : [ "Recycled", "Recycled", 0 ]
+			"obj-58::obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
+			"obj-59" : [ "Compost", "Compost", 0 ],
+			"obj-159::obj-70" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-60" : [ "Recycled", "Recycled", 0 ],
+			"obj-26::obj-73" : [ "live.dial[1]", "Volume", 0 ],
+			"obj-58::obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-159::obj-66" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
+			"obj-58::obj-3" : [ "Frame[6]", "Frame", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
+			"obj-58::obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -5583,6 +5607,13 @@
 			}
 , 			{
 				"name" : "PNC_Communications.maxpat",
+				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PNC_Date.maxpat",
 				"bootpath" : "~/Google Drive/Freelancing/2015/Bruce Odland/PNC/software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
