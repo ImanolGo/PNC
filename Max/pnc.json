@@ -16,6 +16,7 @@
 					"general::live.dialWeatherPrecipitation" : [ 0.3 ],
 					"general::live.dialWeatherTemperature" : [ 21.968504 ],
 					"general::live.dialWeatherWind" : [ 16.078739 ],
+					"general::live.oscPort" : [ 7779.0 ],
 					"general::PNC_MasterVolume::live.dialMasterVolume" : [ 0.58 ],
 					"general::PNC_MasterVolume::live.dialMasterVolumeAux" : [ 0.58 ],
 					"general::PNC_TimeVolume::live.numbox" : [ -0.15 ],

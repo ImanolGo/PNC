@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 79.0, 1473.0, 1076.0 ],
+		"rect" : [ 346.0, 79.0, 1035.0, 1076.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,48 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-176",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 400.666748, 181.0, 107.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 639.166626, 194.75, 64.0, 20.0 ],
+					"style" : "",
+					"text" : "OSC Port"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 13.0,
+					"id" : "obj-174",
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 406.083374, 210.0, 44.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 639.166626, 217.75, 72.0, 18.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.oscPort",
+							"parameter_shortname" : "live.oscPort",
+							"parameter_type" : 0,
+							"parameter_mmax" : 90000.0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.oscPort"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-173",
 					"maxclass" : "message",
@@ -3679,7 +3721,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 140.291687, 181.0, 82.916626, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 772.166626, 197.75, 76.833374, 20.0 ],
+					"presentation_rect" : [ 864.166626, 197.75, 76.833374, 20.0 ],
 					"style" : "",
 					"text" : "Live OSC"
 				}
@@ -3693,7 +3735,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 140.291687, 205.0, 86.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 772.166626, 215.75, 86.0, 22.0 ],
+					"presentation_rect" : [ 864.166626, 215.75, 86.0, 22.0 ],
 					"style" : "",
 					"text" : "PNC_LiveOsc"
 				}
@@ -3747,12 +3789,13 @@
 						"live.dialWeatherCondition" : [ 2.0 ],
 						"live.dialWeatherPrecipitation" : [ 0.144094 ],
 						"live.dialWeatherTemperature" : [ 32.598426 ],
-						"live.dialWeatherWind" : [ 10.535433 ]
+						"live.dialWeatherWind" : [ 10.535433 ],
+						"live.oscPort" : [ 7779.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u706006516"
+					"varname" : "u967006272"
 				}
 
 			}
@@ -3987,12 +4030,12 @@
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 241.75, 202.0, 130.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.166626, 215.75, 130.0, 22.0 ],
+					"presentation_rect" : [ 728.166626, 215.75, 130.0, 22.0 ],
 					"style" : "",
 					"text" : "PNC_Communications"
 				}
@@ -4007,7 +4050,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 241.75, 181.0, 107.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.166626, 194.75, 107.0, 20.0 ],
+					"presentation_rect" : [ 728.166626, 194.75, 107.0, 20.0 ],
 					"style" : "",
 					"text" : "Communications"
 				}
@@ -5014,6 +5057,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 415.583374, 238.0, 333.416687, 238.0, 333.416687, 191.0, 251.25, 191.0 ],
+					"source" : [ "obj-174", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-179", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5554,41 +5607,42 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-58::obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
+			"obj-58::obj-3" : [ "Frame[6]", "Frame", 0 ],
+			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
 			"obj-58::obj-23::obj-3" : [ "Frame[5]", "Frame", 0 ],
-			"obj-58::obj-9" : [ "Floor[7]", "Floor", 0 ],
-			"obj-159::obj-72" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
 			"obj-58::obj-92::obj-10" : [ "Bay[3]", "Bay", 0 ],
-			"obj-122" : [ "Weather Condition", "Condition", 0 ],
-			"obj-58::obj-23::obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-159::obj-70" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
+			"obj-58::obj-6::obj-3" : [ "Frame", "Frame", 0 ],
+			"obj-58::obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-59" : [ "Compost", "Compost", 0 ],
+			"obj-58::obj-9" : [ "Floor[7]", "Floor", 0 ],
+			"obj-58::obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ],
+			"obj-58::obj-87::obj-3" : [ "Frame[1]", "Frame", 0 ],
 			"obj-20" : [ "Artifical Light", "Artificial", 0 ],
 			"obj-24" : [ "Solar Radiation", "Solar", 0 ],
 			"obj-96" : [ "Weather Cloud Cover", "Cloudiness", 0 ],
-			"obj-26::obj-8" : [ "live.dial", "Volume", 0 ],
 			"obj-89" : [ "Weather Wind", "Wind", 0 ],
+			"obj-58::obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
 			"obj-81" : [ "WeatherPrecipitation", "Prec.", 0 ],
 			"obj-58::obj-104::obj-9" : [ "Floor[4]", "Floor", 0 ],
 			"obj-83" : [ "WeatherTemperature", "Temp.", 0 ],
-			"obj-58::obj-6::obj-10" : [ "Bay[1]", "Bay", 0 ],
 			"obj-58::obj-104::obj-3" : [ "Frame[3]", "Frame", 0 ],
+			"obj-159::obj-66" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-58::obj-23::obj-9" : [ "Floor[6]", "Floor", 0 ],
+			"obj-159::obj-72" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-122" : [ "Weather Condition", "Condition", 0 ],
 			"obj-58::obj-10" : [ "Bay[5]", "Bay", 0 ],
-			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
-			"obj-58::obj-6::obj-3" : [ "Frame", "Frame", 0 ],
 			"obj-58::obj-87::obj-10" : [ "Bay[2]", "Bay", 0 ],
-			"obj-58::obj-6::obj-9" : [ "Floor[1]", "Floor", 0 ],
+			"obj-58::obj-99::obj-3" : [ "Frame[4]", "Frame", 0 ],
+			"obj-26::obj-73" : [ "live.dial[1]", "Volume", 0 ],
+			"obj-60" : [ "Recycled", "Recycled", 0 ],
+			"obj-58::obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
+			"obj-58::obj-92::obj-3" : [ "Frame[2]", "Frame", 0 ],
 			"obj-58::obj-92::obj-9" : [ "Floor[3]", "Floor", 0 ],
 			"obj-58::obj-99::obj-9" : [ "Floor[5]", "Floor", 0 ],
-			"obj-59" : [ "Compost", "Compost", 0 ],
-			"obj-159::obj-70" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-60" : [ "Recycled", "Recycled", 0 ],
-			"obj-26::obj-73" : [ "live.dial[1]", "Volume", 0 ],
-			"obj-58::obj-87::obj-9" : [ "Floor[2]", "Floor", 0 ],
-			"obj-159::obj-66" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-28" : [ "Water Recycled", "Recyc", 0 ],
-			"obj-58::obj-3" : [ "Frame[6]", "Frame", 0 ],
-			"obj-27" : [ "Water Fresh", "Fresh", 0 ],
-			"obj-58::obj-104::obj-10" : [ "Bay[4]", "Bay", 0 ]
+			"obj-174" : [ "live.oscPort", "live.oscPort", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
